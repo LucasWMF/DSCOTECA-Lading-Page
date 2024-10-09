@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25&family=Monoton&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Russo+One&display=swap');
+
+@import url(./style.css);
+
+:root {
+
+    /* Fonts */
+    --font-monoton: 'Monoton', sans-serif;
+    --font-russo: 'Russo One', sans-serif;
+    --font-roboto: 'Roboto', sans-serif;
+    --font-jersey: 'Jersey 25', sans-serif;
+    --font-raleway: 'Raleway', sans-serif;
+    --font-oswald: 'Oswald', sans-serif;
+
+    /* Pallete Colors */
+    /* Standard Neutral */
+    --color-black: #000000;
+    --color-white: #FFFFFF;
+    --color-gray: #838383;
+    --color-light-gray: ;
+    
+    /* Custom Neutral */
+    --color-preto: #0D0D0D;
+    
+    /* Blue */
+    --color-azul-pastel: #91CDF2;
+    --color-azul-ceu: #4B93BF;
+    --color-azul-acizentado: #295073;
+    --color-azul-eletrico: #222CF2;
+    --color-azul-meia-noite: #322C59;
+    --color-azul-marinho: #122E40;
+    --color-azul-preto: #0A1326;
+
+    /* Purple */
+    --color-lilas-claro: #A38DF2;
+    --color-lavanda-media: #826AD9;
+    --color-violeta-medio: #6F2FBF;
+    --color-purpura-intenso: #590B8C;
+    --color-indigo-escuro: #463B8C;
+    --color-roxo-muito-escuro: #270140;
+    --color-purpura-profundo: #140126;
+    
+    /* Gradient */
+    --gradient-all: linear-gradient(to right, var(--color-azul-preto) 40%, var(--color-purpura-intenso));
+    --gradient-text: linear-gradient(to right, var(--color-lavanda-media), var(--color-azul-pastel));
+    
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body, .container{
+    width: 100%;
+    height: 100%;
+}
+
+
+.dscoteca {
+    font-family: var(--font-monoton);
+}
+
+.navbar-content{
+    width: 100%;
+    height: 150px;
+    background: var(--gradient-all);
+    padding: 25px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 70px;
+}
+
+.navbar-logo{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar-logo img {
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+    aspect-ratio: 1/1;
+}
+
+.navbar-logo h2 {
+    font-family: var(--font-monoton);
+    font-size: 4em;
+    background: var(--gradient-text); 
+    -webkit-background-clip: text;
+    background-clip: text; 
+    color: transparent;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-family: var(--font-russo);
+    /* width: 100%; */
+}
+
+.navbar ul{
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    font-size: 2em;
+}
+
+.navbar a{
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+/* image 2 */
