@@ -61,60 +61,131 @@ html, body, .container{
 
 .dscoteca {
     font-family: var(--font-monoton);
-}
-
-.navbar-content{
-    width: 100%;
-    height: 150px;
-    background: var(--gradient-all);
-    padding: 25px 50px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 70px;
-}
-
-.navbar-logo{
-    height: 100%;
-    display: flex;
-    align-items: center;
-    gap: 20px;
+    font-weight: 100;
 }
 
 .navbar-logo img {
-    width: 130px;
-    height: 130px;
+    width: 7vw;
+    height: 7vw;
     border-radius: 100%;
     aspect-ratio: 1/1;
 }
 
+.navbar-content {
+    width: 100%;
+    height: 150px;
+    background: var(--gradient-all);
+    padding: 25px 50px;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+}    
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+}
+
 .navbar-logo h2 {
     font-family: var(--font-monoton);
-    font-size: 4em;
+    font-size: 3vw;
     background: var(--gradient-text); 
     -webkit-background-clip: text;
     background-clip: text; 
     color: transparent;
 }
 
-.navbar{
+.navbar {
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 20px;
     font-family: var(--font-russo);
-    /* width: 100%; */
 }
 
-.navbar ul{
+.navbar ul {
     list-style: none;
     display: flex;
     gap: 15px;
-    font-size: 2em;
+    font-size: 1.5vw;
 }
 
-.navbar a{
+.navbar a {
     color: var(--color-white);
     text-decoration: none;
+}
+
+.header-content {
+    width: 100%;
+    height: auto;
+    background: var(--gradient-all);
+    color: var(--color-white);
+    height: 850px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 0;
+}
+
+.main-section {
+    width: 100%;
+    height: 100vh;
+    background: purple;
+}
+
+.left {
+    order: 1;
+    width: 50%;
+    height: 100%;
+    padding: 20px 120px 60px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.letf-texts h1{
+    font-size: 5vw;
+    text-align: left;
+    font-weight: 300;
+}
+
+.letf-texts p{
+    font-size: 2vw;
+    text-align: left;
+    text-justify:inter-word;
+    font-family: var(--font-roboto);
+    font-weight: 300;
+}
+
+.start-text{
+    font-family: var(--font-raleway);
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    /* Interessante coloca o número do jeito normal com as fontes */
+}
+
+.left-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 1.5em;
+}
+
+.right {
+    order: 2;
+    width: 50%;
+    height: 100%;
+    padding: 0px 50px 60px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right img{
+    width: 90%;
+    height: 100%;
 }
 
 /* image 2 */
