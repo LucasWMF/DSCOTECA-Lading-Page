@@ -18,10 +18,10 @@
     --color-white: #FFFFFF;
     --color-gray: #838383;
     --color-light-gray: ;
-    
+
     /* Custom Neutral */
     --color-preto: #0D0D0D;
-    
+
     /* Blue */
     --color-azul-pastel: #91CDF2;
     --color-azul-ceu: #4B93BF;
@@ -39,12 +39,12 @@
     --color-indigo-escuro: #463B8C;
     --color-roxo-muito-escuro: #270140;
     --color-purpura-profundo: #140126;
-    
+
     /* Gradient */
     --gradient-all: linear-gradient(to right, var(--color-azul-preto) 40%, var(--color-purpura-intenso));
     --gradient-text: linear-gradient(to right, var(--color-lavanda-media), var(--color-azul-pastel));
-    
-    
+
+
 }
 
 * {
@@ -54,7 +54,9 @@
     scroll-behavior: smooth;
 }
 
-html, body, .container{
+html,
+body,
+.container {
     width: 100%;
     height: 100%;
 }
@@ -70,11 +72,11 @@ html, body, .container{
     height: 150px;
     background: var(--gradient-all);
     padding: 25px 50px;
-    display: flex; 
+    display: flex;
     align-items: center;
     justify-content: space-between;
     position: sticky;
-}    
+}
 
 .navbar-logo img {
     width: 7vw;
@@ -93,9 +95,9 @@ html, body, .container{
 .navbar-logo h2 {
     font-family: var(--font-monoton);
     font-size: 3vw;
-    background: var(--gradient-text); 
+    background: var(--gradient-text);
     -webkit-background-clip: text;
-    background-clip: text; 
+    background-clip: text;
     color: transparent;
 }
 
@@ -148,21 +150,21 @@ html, body, .container{
     font-size: 1.5em;
 }
 
-.letf-texts h1{
+.letf-texts h1 {
     font-size: 5vw;
     text-align: left;
     font-weight: 300;
 }
 
-.letf-texts p{
+.letf-texts p {
     font-size: 1.5vw;
     text-align: left;
-    text-justify:inter-word;
+    text-justify: inter-word;
     font-family: var(--font-roboto);
     font-weight: 300;
 }
 
-.start-text{
+.start-text {
     font-family: var(--font-raleway);
     font-feature-settings: 'pnum' on, 'lnum' on;
     /* Interessante coloca o número do jeito normal com as fontes */
@@ -172,7 +174,7 @@ html, body, .container{
     font-family: var(--font-monoton);
     background: linear-gradient(45deg, #e0e0e0, #bdbdbd, #9e9e9e);
     -webkit-background-clip: text;
-    background-clip: text; 
+    background-clip: text;
     color: transparent;
 }
 
@@ -186,7 +188,7 @@ html, body, .container{
     justify-content: center;
 }
 
-.right img{
+.right img {
     width: 90%;
     height: 100%;
 }
@@ -197,7 +199,7 @@ html, body, .container{
     background: purple;
 }
 
-.sponsor{
+.sponsor {
     background: var(--gradient-all);
     border: 1px solid var(--color-white);
     padding: 1rem;
@@ -208,30 +210,32 @@ html, body, .container{
     gap: 1vw;
 }
 
-.sponsor h1{
+.sponsor h1 {
     font-family: var(--font-jersey);
     color: var(--color-white);
-    font-weight: 600;
+    font-weight: 558;
+    font-style: normal;
     font-size: 5vw;
+
 }
 
-.sponsor .sponsor-content{
+.sponsor .sponsor-content {
     width: 90%;
     height: 80%;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 1vw;
-    backdrop-filter: blur(100px); 
+    backdrop-filter: blur(100px);
     -webkit-backdrop-filter: blur(100px);
     display: grid;
     grid-template-columns: auto;
     padding: 1vw;
     gap: 0.5vw;
     grid-template-columns: repeat(auto-fit, minmax(10vw, 1fr));
-    align-items: center;   
-    justify-items: center; 
+    align-items: center;
+    justify-items: center;
 }
 
-.sponsor-content img{
+.sponsor-content img {
     height: 8vw;
     width: 8vw;
     aspect-ratio: 1/1;
@@ -257,7 +261,8 @@ html, body, .container{
 .h1-project {
     font-family: var(--font-jersey);
     color: var(--color-white);
-    font-weight: 800;
+    font-weight: 400;
+    font-style: normal;
     font-size: 3vw;
     padding: 1vw 0vw;
 }
@@ -287,15 +292,116 @@ html, body, .container{
     color: var(--color-white);
 }
 
-.gallery1{
+.projects h1 {
+    font-family: var(--font-jersey);
+    color: var(--color-white);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3vw;
+}
+
+.gallery-content1,
+.gallery-content2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 100vh;
     background: var(--gradient-all);
 }
 
-.projects h1{
-    font-family: var(--font-jersey);
+.gallery-content h1 {
     color: var(--color-white);
-    font-weight: 800;
+    font-weight: 400;
+    font-style: normal;
+    font-family: var(--font-jersey);
     font-size: 3vw;
+    padding: 2vw 0vw;
 }
+
+.gallery {
+    width: 80%;
+    height: 70%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 0.5vw;
+}
+
+.feedback {
+    width: 100%;
+    height: 100vh;
+    background: var(--gradient-all);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.feedback h1{
+    color: var(--color-white);
+    font-weight: 400;
+    font-style: normal;
+    font-family: var(--font-jersey);
+    font-size: 4vw;
+    padding: 3vw 0vw;
+}
+
+.feedback-form {
+    width: 30%;
+}
+
+.feedback-form input, 
+.feedback-form textarea, 
+.feedback-form label{
+    width: 100%;
+    padding: 0.5vw;
+    color: var(--color-white);
+}
+
+.feedback-form label{
+    font-weight: 400;
+    font-family: var(--font-jersey);
+    font-style: normal;
+    font-size: 1.5vw;
+    padding: 2vw 0vw;
+}
+
+.feedback-form input,
+.feedback-form textarea{
+    font-size: 1em;
+    border-radius: 0.3vw;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+}
+
+.feedback-form input{
+    height: 10%;
+}
+
+.feedback-form textarea{
+    height: 17vh;
+    font-size: 0.8vw;
+    text-align: justify;
+}
+
+/* NOME COMPLETO */
+
+width: 1124px;
+height: 50px;
+
+font-family: 'Jersey 25';
+font-weight: 400;
+font-size: 50px;
+line-height: 50px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 1;
