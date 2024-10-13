@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2°DS-AMS | EPA 2024</title>
     <link rel="stylesheet" href="../public/css/style.css">
+    <link rel="stylesheet" href="../public/css/root.css">
     <link rel="icon" href="../public/image/logo.png">
 </head>
 
@@ -20,7 +21,7 @@
 
             <div class="navbar">
                 <ul>
-                    <li><a href="#sponsor">Patrocinadores</a></li>
+                    <li><a href="#sponsor" title="Teste">Patrocinadores</a></li>
                     <li><a href="#projects">Projetos</a></li>
                     <li><a href="#gallery">Galeria</a></li>
                     <li><a href="#feedback">Feedbacks</a></li>
@@ -35,7 +36,8 @@
                     <h1 class="start-text">2°DS-AMS </h1>
                     <h1 class="start-text">APRESENTA</h1>
                     <h1 class="dscoteca">DSCOTECA</h1>
-                    <p>O 2° DS-AMS apresentará o projeto "DSCOTECA" nos dias 22, 23 e 24 de outubro, das 14h às 17h,
+                    <p>O 2° DS-AMS apresentará o projeto <a href="#projects">"DSCOTECA"</a> nos dias 22, 23 e 24 de
+                        outubro, das 14h às 17h,
                         combinando discoteca e fliperama, e compartilhando conhecimentos do curso de Arduino.</p>
                 </div>
             </div>
@@ -130,7 +132,7 @@
                 </div>
                 <h1>Projetos</h1>
                 <div id="projects-content">
-                    
+
                 </div>
 
                 <!-- <div class="project-item">
@@ -192,12 +194,9 @@
                 <h1>Faça seu Feedback</h1>
                 <form action="" class="feedback-form">
                     <label for="name">Nome Completo</label>
-                    <p>Ao responder o seu nome irá ser registrado no nosso banco de dados e irá aparecer junto com os outros feedbacks logo abaixo desse formulário</p>
+                    <p>Ao responder o seu nome irá ser registrado no nosso banco de dados e irá aparecer junto com os
+                        outros feedbacks logo abaixo desse formulário</p>
                     <input id="name" type="text">
-                    <br>
-                    <br>
-                    <br>
-                    <br>
                     <label for="rating">Avalie</label>
                     <div class="star-rating">
                         <input type="radio" name="rating" id="star5" value="5">
@@ -213,55 +212,10 @@
                     </div>
 
                     <label for="message">Fale sobre o que achou do projeto</label>
-                    <textarea id="message" name="message" maxlength="500" oninput="updateCounter()"></textarea>
+                    <textarea id="message" name="message" maxlength="500" oninput="updateCounter()"> </textarea>
                     <p id="char-count">0/500 caracteres</p>
 
                     <input type="submit" class="form-submit">
-
-                    <style>
-                        .star-rating {
-                            direction: rtl;
-                            /* Inverte a direção das estrelas */
-                            display: flex;
-                        }
-
-                        .star-rating input[type="radio"] {
-                            display: none;
-                        }
-
-                        .star-rating label {
-                            font-size: 30px;
-                            color: #ddd;
-                            cursor: pointer;
-                        }
-
-                        .star-rating input[type="radio"]:checked~label {
-                            color: gold;
-                        }
-
-                        .star-rating input[type="radio"]:hover~label {
-                            color: gold;
-                        }
-
-                        /* Contador de caracteres */
-                        #char-count {
-                            font-size: 12px;
-                            color: #555;
-                        }
-                    </style>
-
-                    <script>
-                        function updateCounter() {
-                            const message = document.getElementById('message');
-                            const charCount = document.getElementById('char-count');
-                            const maxLength = 500;
-                            const remaining = message.value.length;
-
-                            charCount.textContent = `${remaining}/500 caracteres`;
-                        }
-
-                    </script>
-
                 </form>
             </section>
         </main>

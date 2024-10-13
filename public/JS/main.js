@@ -44,3 +44,12 @@ document.addEventListener('DOMContentLoaded', function () {
         console.log('Deu Erro Ferrou');
     }
 });
+
+function updateCounter() {
+    const message = document.getElementById('message');
+    const charCount = document.getElementById('char-count');
+    const maxLength = 500;
+    const remaining = message.value.length;
+
+    charCount.textContent = `${remaining}/500 caracteres`;
+}

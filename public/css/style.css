@@ -1,51 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Jersey+25&family=Monoton&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Russo+One&display=swap');
-
-@import url(./style.css);
-
-:root {
-
-    /* Fonts */
-    --font-monoton: 'Monoton', sans-serif;
-    --font-russo: 'Russo One', sans-serif;
-    --font-roboto: 'Roboto', sans-serif;
-    --font-jersey: 'Jersey 25', sans-serif;
-    --font-raleway: 'Raleway', sans-serif;
-    --font-oswald: 'Oswald', sans-serif;
-
-    /* Pallete Colors */
-    /* Standard Neutral */
-    --color-black: #000000;
-    --color-white: #FFFFFF;
-    --color-gray: #838383;
-    --color-light-gray: ;
-
-    /* Custom Neutral */
-    --color-preto: #0D0D0D;
-
-    /* Blue */
-    --color-azul-pastel: #91CDF2;
-    --color-azul-ceu: #4B93BF;
-    --color-azul-acizentado: #295073;
-    --color-azul-eletrico: #222CF2;
-    --color-azul-meia-noite: #322C59;
-    --color-azul-marinho: #122E40;
-    --color-azul-preto: #0A1326;
-
-    /* Purple */
-    --color-lilas-claro: #A38DF2;
-    --color-lavanda-media: #826AD9;
-    --color-violeta-medio: #6F2FBF;
-    --color-purpura-intenso: #590B8C;
-    --color-indigo-escuro: #463B8C;
-    --color-roxo-muito-escuro: #270140;
-    --color-purpura-profundo: #140126;
-
-    /* Gradient */
-    --gradient-all: linear-gradient(to right, var(--color-azul-preto) 40%, var(--color-purpura-intenso));
-    --gradient-text: linear-gradient(to right, var(--color-lavanda-media), var(--color-azul-pastel));
-
-
-}
+@import url('root.css');
 
 * {
     margin: 0;
@@ -61,11 +15,13 @@ body,
     height: 100%;
 }
 
-
 .dscoteca {
     font-family: var(--font-monoton);
     font-weight: 100;
 }
+
+/* Navbar */
+/* Menu */
 
 .navbar-content {
     width: 100%;
@@ -118,7 +74,16 @@ body,
 .navbar a {
     color: var(--color-white);
     text-decoration: none;
+    transition: all 3s ease; 
 }
+
+.navbar a:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--color-white);
+}
+
+/* Header */
+/* Cabeçalho */
 
 .header-content {
     width: 100%;
@@ -164,6 +129,18 @@ body,
     font-weight: 300;
 }
 
+.letf-texts a{
+    color: var(--color-white);
+    text-decoration-color: var(--color-white);
+    font-weight: bold;
+    transition: all 1s ease-in-out;
+}
+
+.letf-texts a:hover{
+    color: var(--color-violeta-medio);
+    text-decoration-color: var(--color-violeta-medio);
+}
+
 .start-text {
     font-family: var(--font-raleway);
     font-feature-settings: 'pnum' on, 'lnum' on;
@@ -193,11 +170,17 @@ body,
     height: 100%;
 }
 
+/* Sections Config All */
+/* Configurações de todas as seções */
+
 .main-section {
     width: 100%;
     height: 80vh;
     background: purple;
 }
+
+/* Section Sponsor */
+/* Seções Patrocinadores */
 
 .sponsor {
     background: var(--gradient-all);
@@ -240,6 +223,9 @@ body,
     width: 8vw;
     aspect-ratio: 1/1;
 }
+
+/* Section Projects */
+/* Seções de Projetos */
 
 .projects {
     width: 100%;
@@ -304,6 +290,8 @@ body,
     
 }
 
+/* Section Gallery */
+/* Seções de Galeria */
 
 .gallery-content1,
 .gallery-content2 {
@@ -332,6 +320,9 @@ body,
     border-radius: 0.5vw;
 }
 
+/* Section Feedback */
+/* Seção de Avaliações */
+
 .feedback {
     width: 100%;
     height: 100vh;
@@ -351,8 +342,18 @@ body,
     padding: 3vw 0vw;
 }
 
+.feedback p{
+    color: var(--color-white);
+    font-weight: 100;
+    font-style: normal;
+    text-align: justify;
+    font-family: var(--font-raleway);
+    padding: 0.2vw 0vw;
+}
+
 .feedback-form {
     width: 30%;
+    height: auto;
 }
 
 .feedback-form input, 
@@ -364,6 +365,7 @@ body,
 }
 
 .feedback-form label{
+    height: 100%;
     font-weight: 600;
     font-family: var(--font-jersey);
     font-style: normal;
@@ -387,4 +389,45 @@ body,
     height: 17vh;
     font-size: 0.8vw;
     text-align: justify;
+}
+
+.feedback-form .form-submit{
+    background-color: var(--color-azul-eletrico);
+    margin-top: 1vw;
+    transition: all 0.2s ease-in-out;
+    cursor:pointer;
+}
+
+.feedback-form .form-submit:hover{
+    background-color: var(--color-violeta-medio);
+    margin-top: 1vw;
+}
+
+.star-rating {
+    direction: rtl;
+    display: flex;
+}
+
+.star-rating input[type="radio"] {
+    display: none;
+}
+
+.star-rating label {
+    font-size: 30px;
+    color: #ddd;
+    cursor: pointer;
+}
+
+.star-rating input[type="radio"]:checked~label {
+    color: gold;
+}
+
+.star-rating input[type="radio"]:hover~label {
+    color: gold;
+}
+
+/* Contador de caracteres */
+#char-count {
+    font-size: 12px;
+    color: #555;
 }
