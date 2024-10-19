@@ -1,17 +1,17 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const header = document.querySelector('.header-content')
-    const nav = document.querySelector('nav')
-    const section = document.querySelectorAll('section')
+    document.addEventListener('DOMContentLoaded', function () {
+        const header = document.querySelector('.header-content')
+        const nav = document.querySelector('nav')
+        const section = document.querySelectorAll('section')
 
-    const scrollPosition = window.scrollY;
+        const scrollPosition = window.scrollY;
 
-    if (scrollPosition != 0){
-        nav.classList.add('sticky');
-    } else {
-        nav.classList.remove('sticky');
-    }
+        if (scrollPosition != 0){
+            nav.classList.add('sticky');
+        } else {
+            nav.classList.remove('sticky');
+        }
 
-    while True(){
-        console.log(scrollPosition)
-    }
-});
+        while True(){
+            console.log(scrollPosition)
+        }
+    });
