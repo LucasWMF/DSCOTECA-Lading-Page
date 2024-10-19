@@ -1,0 +1,35 @@
+@keyframes rgb {
+    0% {
+        color: red;
+    }
+    10% {
+        color: orange;
+    }
+    20% {
+        color: yellow;
+    }
+    30% {
+        color: lightgreen;
+    }
+    40% {
+        color: green;
+    }
+    50% {
+        color: cyan;
+    }
+    60% {
+        color: lightblue;
+    }
+    70% {
+        color: blue;
+    }
+    80% {
+        color: purple;
+    }
+    90% {
+        color: pink;
+    }
+    100% {
+        color: red;
+    }
+}

@@ -1,0 +1,87 @@
+/* Header */
+/* Cabeçalho */
+
+.header-content {
+    width: 100%;
+    height: auto;
+    background: var(--gradient-all);
+    color: var(--color-white);
+    height: 850px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.left {
+    order: 1;
+    width: 50%;
+    height: 100%;
+    padding: 20px 120px 180px 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.left-texts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 1.5em;
+}
+
+.letf-texts h1 {
+    font-size: 5vw;
+    text-align: left;
+    font-weight: 300;
+}
+
+.letf-texts p {
+    font-size: 1.5vw;
+    text-align: left;
+    text-justify: inter-word;
+    font-family: var(--font-roboto);
+    font-weight: 300;
+}
+
+.letf-texts a {
+    color: var(--color-white);
+    text-decoration-color: var(--color-white);
+    font-weight: bold;
+}
+
+.letf-texts a:hover {
+    color: var(--color-violeta-medio);
+    text-decoration-color: var(--color-violeta-medio);
+    transition: all 1s ease-in-out;
+}
+
+.start-text {
+    font-family: var(--font-raleway);
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    /* Interessante coloca o número do jeito normal com as fontes */
+}
+
+.left .dscoteca {
+    font-family: var(--font-monoton);
+    background: linear-gradient(45deg, #e0e0e0, #bdbdbd, #9e9e9e);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.right {
+    order: 2;
+    width: 50%;
+    height: 100%;
+    padding: 0px 50px 60px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right img {
+    width: 90%;
+    height: 100%;
+}
