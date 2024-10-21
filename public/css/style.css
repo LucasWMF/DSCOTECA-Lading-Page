@@ -12,6 +12,10 @@ body,
     height: 100%;
 }
 
+body {
+    background: var(--gradient-all);
+}
+
 .dscoteca {
     font-family: var(--font-monoton);
     font-weight: 100;
