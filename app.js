@@ -16,6 +16,8 @@ app.set('view engine', 'php');
 app.use(express.static('./public/css'));
 app.use(express.static('./public/js'));
 app.use(express.static('./public/image'));
+app.use(express.static('./public/css/root.css'));
+app.use(express.static('./public/js/projects.js'));
 
 // Rota de teste simples para verificar o Node.js
 app.get('/', (req, res) => {
