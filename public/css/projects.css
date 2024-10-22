@@ -13,12 +13,12 @@
     flex-direction: column;
 }
 
-.projects h1 {
+.projects-title {
     font-family: var(--font-jersey);
     color: var(--color-white);
     font-weight: 600;
     font-style: normal;
-    font-size: 3vw;
+    font-size: 3em;
 }
 
 #projects-content {
@@ -33,9 +33,10 @@
 .h1-project {
     font-family: var(--font-jersey);
     color: var(--color-white);
-    font-weight: 400;
+    font-weight: 600;
     font-style: normal;
-    font-size: 3vw;
+    font-size: 2em;
+
     padding: 1vw 0vw;
     font-feature-settings: 'pnum' on, 'lnum' on;
     text-decoration: underline;
@@ -94,7 +95,7 @@
     background: rgba(255, 255, 255, 0.2);
     padding: 1.5vw;
     font-family: var(--font-raleway);
-    font-size: 1vw;
+    font-size: 0.8em;
     color: var(--color-white);
     text-align: justify;
     font-feature-settings: 'pnum' on, 'lnum' on;
