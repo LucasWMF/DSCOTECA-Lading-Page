@@ -6,24 +6,24 @@
     },
     "routes": [
         {
-            "src": "/api/index.php",
-            "dest": "/api/index.php"
+            "src": "/public/(.*)",
+            "dest": "/public/$1"
         },
         {
-            "src": "/public/css/root.css",
-            "dest": "/public/css/root.css"
-        },
-        {
-            "src": "/assents/img/(.*).png",
+            "src": "/assets/img/(.*).png",
             "dest": "/public/image/$1"
-        },
-        {
-            "src": "/(.*)",
-            "dest": "/api/index.php"
         },
         {
             "src": "/views/index.php",
             "dest": "/views/index.php"
+        },
+        {
+            "src": "/api/(.*)",
+            "dest": "/api/index.php"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "/api/index.php"
         }
     ]
 }
