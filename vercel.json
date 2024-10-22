@@ -10,12 +10,16 @@
             "dest": "/public/$1"
         },
         {
-            "src": "/public/css/root.css",
-            "dest": "/css/root.css"
+            "src": "/assets/img/(.*)",
+            "dest": "/public/image/$1"
         },
         {
-            "src": "/assets/img/(.*).png",
-            "dest": "/public/image/$1"
+            "src": "/assets/css/(.*)",
+            "dest": "/public/css/$1"
+        },
+        {
+            "src": "/assets/js/(.*)",
+            "dest": "/public/js/$1"
         },
         {
             "src": "/views/index.php",

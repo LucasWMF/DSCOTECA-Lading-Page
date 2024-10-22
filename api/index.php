@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2°DS-AMS | EPA 2024</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/root.css">
-    <link rel="icon" href="/image/img1.png">
+    <link rel="stylesheet" href="/assets/css/root.css">
+    <link rel="icon" href="/assets/img/img1.png">
 </head>
 
 <body>
@@ -17,7 +17,7 @@
 
             <nav class="navbar-content">
                 <a class="navbar-logo" href="#home">
-                    <img src="/image/logo.png" alt="">
+                    <img src="/assets/img/logo.png" alt="">
                     <h2 class="dscoteca">DSCOTECA</h2>
                 </a>
 
@@ -68,7 +68,7 @@
                 </div>
             </div>
             <div class="right">
-                <img src="/image/globo.png" alt="">
+                <img src="/assets/img/globo.png" alt="">
             </div>
 
         </header>
@@ -79,32 +79,32 @@
                 <div class="sponsor-content">
                     <div class="logo1">
                         <!-- <a href="#" target="_blank"> -->
-                            <img src="/image/cd sant'areia.png" alt="Logo 1">
+                        <img src="/assets/img/cd sant'areia.png" alt="Logo 1">
                         <!-- </a> -->
                     </div>
                     <div class="logo2">
                         <!-- <a href="#" target="_blank"> -->
-                            <img src="/image/mercado américa.png" alt="Logo 2">
+                        <img src="/assets/img/mercado américa.png" alt="Logo 2">
                         <!-- </a> -->
                     </div>
                     <div class="logo3">
                         <!-- <a href="#" target="_blank"> -->
-                            <img src="/image/niggaz.png" alt="Logo 3">
+                        <img src="/assets/img/niggaz.png" alt="Logo 3">
                         <!-- </a> -->
                     </div>
                     <div class="logo4">
                         <!-- <a href="https://armazemnaturalcereais.com.br" target="_blank"> -->
-                            <img src="https://armazemnaturalcereais.com.br/wp-content/uploads/2020/11/cropped-logo-topo.png" alt="Logo 4">
+                        <img src="https://armazemnaturalcereais.com.br/wp-content/uploads/2020/11/cropped-logo-topo.png" alt="Logo 4">
                         <!-- </a> -->
                     </div>
                     <div class="logo5">
                         <!-- <a href="#" target="_blank"> -->
-                            <img src="/image/nine.png" alt="Logo 5">
+                        <img src="/assets/img/nine.png" alt="Logo 5">
                         <!-- </a> -->
                     </div>
                     <div class="logo6">
                         <!-- <a href="#" target="_blank"> -->
-                            <img src="/image/deluxe.png" alt="Logo 5">
+                        <img src="/assets/img/deluxe.png" alt="Logo 5">
                         <!-- </a> -->
                     </div>
                 </div>
@@ -116,7 +116,7 @@
                 </div>
                 <h1 class="projects-title">Projetos</h1>
                 <div id="projects-content">
-                    <script src="/JS/projects.js"></script>
+                    <script src="/assets/js/projects.js"></script>
                 </div>
 
                 <!-- <div class="project-item">
@@ -222,7 +222,7 @@
             <!-- <p class="number-count">001</p> -->
             <!-- <div class="card">
                         <div class="content-user">
-                            <img src="/image/logo.png" alt="">
+                            <img src="/assets/img/logo.png" alt="">
                             <div class="cards-title-name">
                                 <h3 class="title-cards-user">USUÁRIO</h3>
                                 <p class="card-name">NOME</p>
