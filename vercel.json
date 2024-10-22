@@ -10,6 +10,10 @@
             "dest": "/public/$1"
         },
         {
+            "src": "/public/css/(.*)",
+            "dest": "/css/$1"
+        },
+        {
             "src": "/assets/img/(.*).png",
             "dest": "/public/image/$1"
         },
