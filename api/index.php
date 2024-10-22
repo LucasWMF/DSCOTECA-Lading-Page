@@ -119,7 +119,7 @@
                 </div>
                 <h1 class="projects-title">Projetos</h1>
                 <div id="projects-content">
-                    <script src="/assets/js/projects.js"></script>
+                    <script src="/JS/projects.js"></script>
                 </div>
 
                 <!-- <div class="project-item">
