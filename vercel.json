@@ -6,10 +6,6 @@
     },
     "routes": [
         {
-            "src": "/public/(.*)",
-            "dest": "/public/$1"
-        },
-        {
             "src": "/assets/img/(.*).png",
             "dest": "/public/image/$1"
         },
