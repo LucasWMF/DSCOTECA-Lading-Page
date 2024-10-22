@@ -20,7 +20,7 @@
 
             <nav class="navbar-content">
                 <a class="navbar-logo" href="#home">
-                    <img src="assets/img/logo.png" alt="">
+                    <img src="/image/logo.png" alt="">
                     <h2 class="dscoteca">DSCOTECA</h2>
                 </a>
 
@@ -71,7 +71,7 @@
                 </div>
             </div>
             <div class="right">
-                <img src="/assets/img/globo.png" alt="">
+                <img src="/image/globo.png" alt="">
             </div>
 
         </header>
@@ -82,17 +82,17 @@
                 <div class="sponsor-content">
                     <div class="logo1">
                         <!-- <a href="#" target="_blank"> -->
-                        <img src="/assets/img/cd sant'areia.png" alt="Logo 1">
+                        <img src="/image/cd sant'areia.png" alt="Logo 1">
                         <!-- </a> -->
                     </div>
                     <div class="logo2">
                         <!-- <a href="#" target="_blank"> -->
-                        <img src="/assets/img/mercado américa.png" alt="Logo 2">
+                        <img src="/image/mercado américa.png" alt="Logo 2">
                         <!-- </a> -->
                     </div>
                     <div class="logo3">
                         <!-- <a href="#" target="_blank"> -->
-                        <img src="/assets/img/niggaz.png" alt="Logo 3">
+                        <img src="/image/niggaz.png" alt="Logo 3">
                         <!-- </a> -->
                     </div>
                     <div class="logo4">
@@ -102,12 +102,12 @@
                     </div>
                     <div class="logo5">
                         <!-- <a href="#" target="_blank"> -->
-                        <img src="/assets/img/nine.png" alt="Logo 5">
+                        <img src="/image/nine.png" alt="Logo 5">
                         <!-- </a> -->
                     </div>
                     <div class="logo6">
                         <!-- <a href="#" target="_blank"> -->
-                        <img src="/assets/img/deluxe.png" alt="Logo 5">
+                        <img src="/image/deluxe.png" alt="Logo 5">
                         <!-- </a> -->
                     </div>
                 </div>
