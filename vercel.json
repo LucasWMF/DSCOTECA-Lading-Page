@@ -14,8 +14,8 @@
             "dest": "/public/image/$1"
         },
         {
-            "src": "/assets/css/root.css",
-            "dest": "/public/css/root.css"
+            "src": "/assets/css/(.*)",
+            "dest": "/public/css/$1"
         },
         {
             "src": "/assets/js/(.*)",
