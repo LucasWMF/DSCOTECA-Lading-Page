@@ -34,7 +34,7 @@ app.use((req, res, next) => {
 // Middleware básico para capturar erros
 app.use((err, req, res, next) => {
   console.error(err.stack);
-  console.log(err.stack);
+  console.log('ERROOOOOOOOOOOOO');
   res.status(500).send('Ocorreu um erro no servidor');
 });
 
