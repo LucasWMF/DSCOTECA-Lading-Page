@@ -1,0 +1,52 @@
+.footer-content {
+    background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo */
+    color: white; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px; /* Espaçamento interno */
+    display: flex;
+    flex-direction: column; /* Organiza os itens em coluna */
+    align-items: center; /* Centraliza os itens */
+}
+
+.footer-content h1 {
+    font-family: var(--font-raleway);
+    margin: 10px 0; /* Margem entre os títulos */
+    font-size: 1.5em; /* Tamanho da fonte */
+    font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.footer-link {
+    color: #00AFFF; /* Cor do link */
+    text-decoration: none; /* Remove o sublinhado do link */
+    margin-top: 10px; /* Margem acima do link */
+}
+
+.footer-link:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .footer-content h1 {
+        font-size: 1.2em; /* Ajusta o tamanho da fonte em telas menores */
+    }
+}
+
+.instagram-button {
+    text-decoration: none;
+    background-color: #E1306C; /* Cor de fundo do botão do Instagram */
+    color: white; /* Cor do texto do botão */
+    padding: 10px 15px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    display: flex; /* Flex para alinhar ícone e texto */
+    align-items: center; /* Centraliza verticalmente */
+    margin: 10px 0; /* Margens superior e inferior */
+}
+
+.instagram-button i {
+    margin-right: 8px; /* Espaço entre ícone e texto */
+}
+
+.instagram-button:hover {
+    background-color: #C13584; /* Cor ao passar o mouse */
+}

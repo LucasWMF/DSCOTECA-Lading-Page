@@ -12,12 +12,12 @@
     background: var(--gradient-all);
 }
 
-.gallery-content h1 {
+.gallery-content1 h1, .gallery-content2 {
     color: var(--color-white);
     font-weight: 600;
     font-style: normal;
     font-family: var(--font-jersey);
-    font-size: 3vw;
+    font-size: 1.5em;
     padding: 2vw 0vw;
 }
 
@@ -26,4 +26,11 @@
     height: 70%;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 0.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery h1{
+    font-size: max(2em, 4em);
 }

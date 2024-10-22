@@ -33,10 +33,31 @@
 }
 
 .feedback-form {
+    position: relative; 
     width: 80vw;
     display: flex;
     flex-direction: column;
     height: auto;
+}
+
+.feedback-form::after {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Use justify-content em vez de justify-items */
+    content: 'EM BREVE!';
+    position: absolute; /* Muda a posição para absoluta */
+    top: 0; /* Posiciona no topo */
+    left: 0; /* Posiciona à esquerda */
+    width: 100%; /* Largura total do elemento pai */
+    height: 110%; /* Altura total do elemento pai */
+    background: rgba(255, 255, 255, .5); /* Fundo semitransparente */
+    z-index: 2; /* Garante que o elemento esteja acima de outros */
+    pointer-events: none; /* Opcional: permite interagir com o conteúdo abaixo */
+    border-radius: 5px;
+    color: purple;
+    font-family: var(--font-jersey);
+    font-weight: 600;
+    font-size: max(2em, 4em);
 }
 
 .feedback-form input,

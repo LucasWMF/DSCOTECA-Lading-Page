@@ -91,7 +91,7 @@
     display: none;
 }
 
-@media screen and (max-width: 1170px){
+@media screen and (max-width: 800px){
     .navbar-logo img {
         display: none;
     }

@@ -1,17 +1,1 @@
-{
-"name": "dscoteca-lading-page",
-    
-"version": "1.0.0",
-    
-"description": "Landing page for Dscoteca project EPA 2024 2°DS-AMS",
-    
-"main": "index.js",
-    
-"scripts": {
-"test": "echo \"Error: A\" && exit 1"
-},
-
-"author": "",
-
-"license": "ISC"
-}
+{"name":"dscoteca-lading-page","version":"1.0.0","description":"Landing page for Dscoteca project EPA 2024 2°DS-AMS","main":"index.js","scripts":{"test":"echo \"Error: A\" && exit 1"},"author":"","license":"ISC","dependencies":{"express":"^4.21.1","php-express":"^0.0.3"}}

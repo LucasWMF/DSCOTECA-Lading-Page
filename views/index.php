@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2°DS-AMS | EPA 2024</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../public/css/root.css">
-    <link rel="icon" href="../public/image/logo.png">
+    <link rel="stylesheet" href="/css/root.css">
+    <link rel="icon" href="/image/logo.png">
 </head>
 
 <body>
@@ -17,7 +17,7 @@
 
             <nav class="navbar-content">
                 <a class="navbar-logo" href="#home">
-                    <img src="../public/image/logo.png" alt="">
+                    <img src="/image/logo.png" alt="">
                     <h2 class="dscoteca">DSCOTECA</h2>
                 </a>
 
@@ -68,7 +68,7 @@
                 </div>
             </div>
             <div class="right">
-                <img src="../public/image/globo.png" alt="">
+                <img src="/image/globo.png" alt="">
             </div>
 
         </header>
@@ -77,78 +77,31 @@
             <section class="main-section sponsor" id="sponsor">
                 <h1>Patrocinadores</h1>
                 <div class="sponsor-content">
-                    <a class="logo">
-                        <img src="https://armazemnaturalcereais.com.br/wp-content/uploads/2020/11/cropped-logo-topo.png" alt="">
-                    </a>
-                    <a class="logo">
-                        <img src="../public/image/logo.png" alt="">
-                    </a>
-                    <a class="logo">
-                        <img src="../public/image/logo.png" alt="">
-                    </a>
-                    <a class="logo">
-                        <img src="../public/image/logo.png" alt="">
-                    </a>
-                    <a class="logo">
-                        <img src="../public/image/logo.png" alt="">
-                    </a>
-                    <a class="logo">
-                        <img src="../public/image/logo.png" alt="">
-                    </a>
-                    <a class="logo">
-                        <img src="../public/image/logo.png" alt="">
-                    </a>
-                    <a class="logo">
-                        <img src="../public/image/logo.png" alt="">
-                    </a>
-                    <a class="logo">
-                        <img src="../public/image/logo.png" alt="">
-                    </a>
-                    <a class="logo">
-                        <img src="../public/image/logo.png" alt="">
-                    </a>
-                    <a class="logo">
-                        <img src="../public/image/logo.png" alt="">
-                    </a>
-                    <a class="logo">
-                        <img src="../public/image/logo.png" alt="">
-                    </a>
-                    <a class="logo">
-                        <img src="../public/image/logo.png" alt="">
-                    </a>
-                    <a class="logo">
-                        <img src="../public/image/logo.png" alt="">
-                    </a>
-                    <a class="logo">
-                        <img src="../public/image/logo.png" alt="">
-                    </a>
-                    <a class="logo">
-                        <img src="../public/image/logo.png" alt="">
-                    </a>
-                    <a class="logo">
-                        <img src="../public/image/logo.png" alt="">
-                    </a>
-                    <a class="logo">
-                        <img src="../public/image/logo.png" alt="">
-                    </a>
-                    <a class="logo">
-                        <img src="../public/image/logo.png" alt="">
-                    </a>
-                    <a class="logo">
-                        <img src="../public/image/logo.png" alt="">
-                    </a>
-                    <a class="logo">
-                        <img src="../public/image/logo.png" alt="">
-                    </a>
-                    <a class="logo">
-                        <img src="../public/image/logo.png" alt="">
-                    </a>
-                    <a class="logo">
-                        <img src="../public/image/logo.png" alt="">
-                    </a>
-                    <a class="logo">
-                        <img src="../public/image/logo.png" alt="">
-                    </a>
+                    <div class="logo1">
+                        <a href="#" target="_blank">
+                            <img src="/image/cd sant'areia.png" alt="Logo 1">
+                        </a>
+                    </div>
+                    <div class="logo2">
+                        <a href="#" target="_blank">
+                            <img src="/image/mercado américa.png" alt="Logo 2">
+                        </a>
+                    </div>
+                    <div class="logo3">
+                        <a href="#" target="_blank">
+                            <img src="/image/niggaz.png" alt="Logo 3">
+                        </a>
+                    </div>
+                    <div class="logo4">
+                        <a href="https://armazemnaturalcereais.com.br" target="_blank">
+                            <img src="https://armazemnaturalcereais.com.br/wp-content/uploads/2020/11/cropped-logo-topo.png" alt="Logo 4">
+                        </a>
+                    </div>
+                    <div class="logo5">
+                        <a href="#" target="_blank">
+                            <img src="/image/nine.png" alt="Logo 5">
+                        </a>
+                    </div>
                 </div>
             </section>
 
@@ -158,7 +111,7 @@
                 </div>
                 <h1 class="projects-title">Projetos</h1>
                 <div id="projects-content">
-                    <script src="../public/JS/projects.js"></script>
+                    <script src="/JS/projects.js"></script>
                 </div>
 
                 <!-- <div class="project-item">
@@ -189,19 +142,15 @@
 
             <div class="gallery-content" id="gallery">
                 <section class="main-section gallery-content1">
-                    <h1>GALERIA DOS PROJETOS</h1>
+                    <h1>GALERIA DE FOTOS</h1>
 
                     <div class="gallery">
-                        <div class="image"></div>
-                        <div class="image"></div>
-                        <div class="image"></div>
-                        <div class="image"></div>
-                        <div class="image"></div>
+                        <h1>EM BREVE!</h1>
                     </div>
 
                 </section>
 
-                <section class="main-section gallery-content2">
+                <!-- <section class="main-section gallery-content2">
                     <h1>GALERIA DOS VISITANTES</h1>
 
                     <div class="gallery">
@@ -212,20 +161,19 @@
                         <div class="image"></div>
                     </div>
 
-                </section>
+                </section> -->
             </div>
 
 
             <section class="main-section feedback" id="feedback">
                 <h1>Faça seu Feedback</h1>
-                <form action="" class="feedback-form">
+                <form action="" class="feedback-form" disabled>
                     <label for="name">
                         <h2>Nome Completo</h2>
-                        <p>Ao responder o seu nome irá ser registrado no nosso banco de dados e irá aparecer junto com
-                            os
-                            outros feedbacks logo abaixo desse formulário</p>
+                        <p>Ao responder, seu nome será registrado no nosso banco de dados e aparecerá junto com os outros feedbacks logo abaixo desse formulário.</p>
                     </label>
                     <input id="name" type="text">
+
                     <label for="rating">Avalie</label>
                     <div class="star-rating">
                         <input type="radio" name="rating" id="star5" value="5">
@@ -245,7 +193,7 @@
                     </div>
 
                     <label for="message">Fale sobre o que achou do projeto</label>
-                    <textarea id="message" name="message" maxlength="500" oninput="updateCounter()"> </textarea>
+                    <textarea id="message" name="message" maxlength="500" oninput="updateCounter()"></textarea>
                     <p id="char-count">0/500 caracteres</p>
 
                     <script>
@@ -262,14 +210,14 @@
                     <input type="submit" class="form-submit">
                 </form>
             </section>
-            <section class="main-section feedback-cards">
+            <!-- <section class="main-section feedback-cards">
                 <h1>Feedbacks</h1>
-                <div class="cards-content">
+                <div class="cards-content"> -->
 
-                    <div class="card">
-                        <!-- <p class="number-count">001</p> -->
+            <!-- <p class="number-count">001</p> -->
+            <!-- <div class="card">
                         <div class="content-user">
-                            <img src="../public/image/logo.png" alt="">
+                            <img src="/image/logo.png" alt="">
                             <div class="cards-title-name">
                                 <h3 class="title-cards-user">USUÁRIO</h3>
                                 <p class="card-name">NOME</p>
@@ -293,14 +241,17 @@
                             estabelecidos para o espaço disponível. Isso é essencial para uma comunicação clara e
                             objetiva.
                         </p>
-                    </div>
-                </div>
+                    </div> -->
+            <!-- </div> -->
             </section>
         </main>
 
         <footer class="footer-content">
-            <div class=""></div>
-            <div class=""></div>
+            <h1>EPA 2024</h1>
+            <h1>DSCOTECA - 2°DS-AMS</h1>
+            <a href="https://www.instagram.com/epa_2ds_ams/" class="instagram-button" target="_blank">
+                <i class="fa-brands fa-instagram"></i> Siga-nos no Instagram
+            </a>
         </footer>
 
     </div>
@@ -309,6 +260,6 @@
 
 </html>
 
-<script src="../public/JS/main.js"></script>
+<script src="/JS/main.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>

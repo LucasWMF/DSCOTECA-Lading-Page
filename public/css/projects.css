@@ -100,3 +100,7 @@
     text-align: justify;
     font-feature-settings: 'pnum' on, 'lnum' on;
 }
+
+.p-project p{
+    text-align: justify;
+}
