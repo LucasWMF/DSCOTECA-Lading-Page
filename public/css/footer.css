@@ -34,7 +34,7 @@
 
 .instagram-button {
     text-decoration: none;
-    background-color: #E1306C; /* Cor de fundo do botão do Instagram */
+    background: var(--instagram-gradient); /* Cor de fundo do botão do Instagram */
     color: white; /* Cor do texto do botão */
     padding: 10px 15px; /* Espaçamento interno */
     border-radius: 5px; /* Bordas arredondadas */

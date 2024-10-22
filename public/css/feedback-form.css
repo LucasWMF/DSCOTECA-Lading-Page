@@ -16,8 +16,9 @@
     font-weight: 600;
     font-style: normal;
     font-family: var(--font-jersey);
-    font-size: 4vw;
-    width: 30vw;
+    font-size: 3.5em;
+    /* width: 30vw; */
+    width: 100%;
     text-align: center;
     padding: 1vw 0vw;
 }
@@ -173,7 +174,7 @@
     font-weight: 600;
     font-style: normal;
     font-family: var(--font-jersey);
-    font-size: 4vw;
+    font-size: 3em;
     width: 100%;
     text-align: center;
     padding: 1vw 0vw;

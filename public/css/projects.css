@@ -37,7 +37,7 @@
     font-style: normal;
     font-size: 2em;
 
-    padding: 1vw 0vw;
+    padding: 0.5em 0vw;
     font-feature-settings: 'pnum' on, 'lnum' on;
     text-decoration: underline;
     text-decoration-color: transparent;
@@ -93,7 +93,7 @@
     grid-area: "text";
     width: 100%;
     background: rgba(255, 255, 255, 0.2);
-    padding: 1.5vw;
+    padding: 1em;
     font-family: var(--font-raleway);
     font-size: 0.8em;
     color: var(--color-white);

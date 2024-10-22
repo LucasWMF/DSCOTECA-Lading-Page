@@ -50,6 +50,6 @@
     /* Gradient */
     --gradient-all: linear-gradient(to right, var(--color-azul-preto) 40%, var(--color-purpura-intenso));
     --gradient-text: linear-gradient(to right, var(--color-lavanda-media), var(--color-azul-pastel));
-
+    --instagram-gradient: linear-gradient(to right,#833ab4, #fd1d1d, #fcb045);
 
 }

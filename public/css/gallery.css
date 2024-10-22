@@ -17,8 +17,10 @@
     font-weight: 600;
     font-style: normal;
     font-family: var(--font-jersey);
-    font-size: 1.5em;
-    padding: 2vw 0vw;
+    font-size: 3em;
+    padding: 1em 0vw;
+    width: 100%;
+    text-align: center;
 }
 
 .gallery {

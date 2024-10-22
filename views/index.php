@@ -78,29 +78,34 @@
                 <h1>Patrocinadores</h1>
                 <div class="sponsor-content">
                     <div class="logo1">
-                        <a href="#" target="_blank">
+                        <!-- <a href="#" target="_blank"> -->
                             <img src="/image/cd sant'areia.png" alt="Logo 1">
-                        </a>
+                        <!-- </a> -->
                     </div>
                     <div class="logo2">
-                        <a href="#" target="_blank">
+                        <!-- <a href="#" target="_blank"> -->
                             <img src="/image/mercado américa.png" alt="Logo 2">
-                        </a>
+                        <!-- </a> -->
                     </div>
                     <div class="logo3">
-                        <a href="#" target="_blank">
+                        <!-- <a href="#" target="_blank"> -->
                             <img src="/image/niggaz.png" alt="Logo 3">
-                        </a>
+                        <!-- </a> -->
                     </div>
                     <div class="logo4">
-                        <a href="https://armazemnaturalcereais.com.br" target="_blank">
+                        <!-- <a href="https://armazemnaturalcereais.com.br" target="_blank"> -->
                             <img src="https://armazemnaturalcereais.com.br/wp-content/uploads/2020/11/cropped-logo-topo.png" alt="Logo 4">
-                        </a>
+                        <!-- </a> -->
                     </div>
                     <div class="logo5">
-                        <a href="#" target="_blank">
+                        <!-- <a href="#" target="_blank"> -->
                             <img src="/image/nine.png" alt="Logo 5">
-                        </a>
+                        <!-- </a> -->
+                    </div>
+                    <div class="logo6">
+                        <!-- <a href="#" target="_blank"> -->
+                            <img src="/image/deluxe.png" alt="Logo 5">
+                        <!-- </a> -->
                     </div>
                 </div>
             </section>

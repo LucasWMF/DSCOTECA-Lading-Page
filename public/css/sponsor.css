@@ -17,7 +17,7 @@
     color: var(--color-white);
     font-weight: 600;
     font-style: normal;
-    font-size: 5vw;
+    font-size: 3em;
     margin-bottom: 20px;
     /* Margem abaixo do título */
 }
@@ -32,7 +32,7 @@
     backdrop-filter: blur(100px);
     -webkit-backdrop-filter: blur(100px);
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(10vw, 1fr));
+    grid-template-columns: repeat(4, minmax(10vw, 1fr));
     /* Auto-fit com 10vw como mínimo */
     grid-template-rows: repeat(2, minmax(10vw, 1fr));
     /* Auto-fit com 10vw como mínimo */
@@ -50,6 +50,16 @@
 }
 
 /* Controle de posição para o layout desejado */
+.logo1 a,
+.logo2 a,
+.logo3 a,
+.logo4 a,
+.logo5 a,
+.logo6 a {
+    width: 100%;
+    height: 100%;
+}
+
 .logo1 img,
 .logo2 img,
 .logo3 img,
@@ -105,53 +115,163 @@
 }
 
 .logo4 {
-    /* height: max-content; */
-    /* width: max-content; */
     display: flex;
     align-items: center;
     justify-content: center;
     grid-column: 4;
-    /* Coluna 4 */
-    grid-row: 1 / span 2;
+    grid-row: 1;
     width: 100%;
-    /* Linha 1 */
 }
 
 .logo5 {
-    /* height: max-content; */
-    /* width: max-content; */
     display: flex;
     align-items: center;
     justify-content: center;
     grid-column: 3;
-    /* Coluna 1 */
     grid-row: 2;
-    /* Linha 2 */
 }
 
 .logo6 {
-    /* height: max-content; */
-    /* width: max-content; */
     display: flex;
     align-items: center;
     justify-content: center;
     grid-column: 4;
-    /* Coluna 4 */
     grid-row: 2;
-    /* Linha 2 */
 }
 
 /* Responsividade */
 @media (max-width: 768px) {
     .sponsor .sponsor-content {
-        grid-template-columns: repeat(3, 1fr);
-        /* 3 colunas em telas médias */
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        height: auto;
+        gap: 0;
+    }
+
+    .sponsor{
+        height: auto;
+    }
+
+    .logo1{
+        width: 100%;
+        height: auto;
+        grid-column: 1;
+        grid-row: 1;
+    }
+    
+    .logo2{
+        width: 100%;
+        height: auto;
+        grid-column: 1/ span 2;
+        grid-row: 2;
+    }
+    
+    .logo3{
+        width: 100%;
+        height: auto;
+        grid-column: 1/ span 2;
+        grid-row: 3;
+    }
+    
+    .logo4{
+        width: 100%;
+        height: auto;
+        grid-column: 2;
+        grid-row: 1;
+    }
+    
+    .logo5{
+        width: 100%;
+        height: auto;
+        grid-column: 1 / span 2;
+        grid-row: 4;
+    }
+    
+    .logo6{
+        width: 90%;
+        height: auto;
+        grid-column: 1 / span 2;
+        grid-row: 5;
+        width: 15em;
+        height: 15em;
+
+        img{
+            border-radius: 100%;
+        }
+    }
+    
+    .sponsor-content{
+        height: auto;
     }
 }
 
 @media (max-width: 480px) {
     .sponsor .sponsor-content {
         grid-template-columns: repeat(2, 1fr);
-        /* 2 colunas em telas pequenas */
+        grid-template-rows: repeat(5, 1fr);
+    }
+
+    .sponsor-content{
+        height: auto;
+    }
+}
+
+@media (max-width: 280px) {
+    .sponsor .sponsor-content {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+    }
+
+    .sponsor-content img {
+        height: auto;
+        width: 80%;
+        /* aspect-ratio: 1/1; */
+        mix-blend-mode: multiply;
+    }
+
+    .sponsor-content{
+        height: auto;
+    }
+
+    .logo1{
+        width: auto;
+        height: auto;
+        justify-content: left;
+    }
+    
+    .logo2{
+        width: auto;
+        height: auto;
+        justify-content: left;
+    }
+    
+    .logo3{
+        width: auto;
+        height: auto;
+        justify-content: left;
+    }
+    
+    .logo4{
+        width: auto;
+        height: auto;
+        justify-content: left;
+    }
+    
+    .logo5{
+        width: auto;
+        height: auto;
+        justify-content: left;
+    }
+    
+    .logo6{
+        width: auto;
+        height: auto;
+        width: 15em;
+        height: 15em;
+        justify-content: left;
+
+        img{
+            border-radius: 100%;
+        }
     }
 }

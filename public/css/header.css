@@ -27,17 +27,16 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    font-size: 1.5em;
 }
 
 .letf-texts h1 {
-    font-size: 5vw;
+    font-size: max(2.5em, 1.5em, 2.5em);
     text-align: left;
     font-weight: 300;
 }
 
 .letf-texts p {
-    font-size: 1.5vw;
+    font-size: 1em;
     text-align: left;
     text-justify: inter-word;
     font-family: var(--font-roboto);
@@ -91,7 +90,7 @@
     .header-content{
         flex-direction: column;
         /* height: auto; */
-        height: 85svh;
+        height: 90svh;
     }
 
     .left, .right {

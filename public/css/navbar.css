@@ -130,7 +130,15 @@
         /* background: var(--gradient-all); */
         padding-bottom: 8vw 5vw;
         font-family: var(--font-russo);
+        width: 100%;
+        background: var(--gradient-all);
+        opacity: 0.9;
     } 
+
+    .nav-item {
+        padding: 0.5rem 0.5rem;
+        opacity: 1;
+    }
 
     .stick {
         backdrop-filter: blur(20px);
