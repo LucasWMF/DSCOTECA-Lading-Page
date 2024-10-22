@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
             // navRes.classList.remove('sticky');
         }
 
-        console.log(scrollPosition);
+        // console.log(scrollPosition);
     });
 
     document.querySelector('.button_res').addEventListener('click', function () {    
