@@ -13,7 +13,7 @@ app.set('views', './views');
 app.set('view engine', 'php');
 
 // Serve arquivos estáticos (CSS, JS, imagens) da pasta 'public'
-// app.use(express.static('./public'));
+app.use(express.static('./public'));
 
 // Rota de teste simples para verificar o Node.js
 app.get('/', (req, res) => {
