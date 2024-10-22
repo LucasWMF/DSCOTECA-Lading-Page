@@ -11,7 +11,7 @@
     <title>2°DS-AMS | EPA 2024</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/root.css">
-    <link rel="icon" href="/img/logo.png">
+    <link rel="icon" href="assets/img/logo.png">
 </head>
 
 <body>
@@ -20,7 +20,7 @@
 
             <nav class="navbar-content">
                 <a class="navbar-logo" href="#home">
-                    <img src="/assets/img/logo.png" alt="">
+                    <img src="assets/img/logo.png" alt="">
                     <h2 class="dscoteca">DSCOTECA</h2>
                 </a>
 
