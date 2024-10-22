@@ -10,8 +10,8 @@
             "dest": "/public/$1"
         },
         {
-            "src": "/public/css/(.*)",
-            "dest": "/css/$1"
+            "src": "/public/css/root.css",
+            "dest": "/css/root.css"
         },
         {
             "src": "/assets/img/(.*).png",
