@@ -11,10 +11,5 @@
             "src": "/",
             "dest": "views/index.php"
         }
-    ],
-    "functions": {
-        "api/**/*.php": {
-            "runtime": "nodejs16.x"
-        }
-    }
+    ]
 }
