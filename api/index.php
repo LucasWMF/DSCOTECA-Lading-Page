@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="/assets/css/sponsor.css">
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="icon" href="/assets/img/img1.png">
+    <link rel="stylesheet" href="../public/css/root.css">
 </head>
 
 <body>

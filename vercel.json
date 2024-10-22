@@ -15,7 +15,7 @@
         },
         {
             "src": "/assets/css/(.*)",
-            "dest": "/public/css/$1"
+            "dest": "/public/css/root.css"
         },
         {
             "src": "/assets/js/(.*)",
