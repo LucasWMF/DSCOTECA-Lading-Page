@@ -17,6 +17,7 @@ app.use(express.static('./public'));
 
 // Rota de teste simples para verificar o Node.js
 app.get('/', (req, res) => {
+  console.log('Acessando a rota /');
   res.render('index.php');
 });
 
