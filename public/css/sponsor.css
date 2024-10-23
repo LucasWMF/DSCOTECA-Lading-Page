@@ -209,6 +209,7 @@
     .sponsor .sponsor-content {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(5, 1fr);
+        background: var(--color-purpura-intenso);
     }
 
     .sponsor-content{
