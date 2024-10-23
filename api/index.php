@@ -174,47 +174,47 @@
 
 
             <section class="main-section feedback" id="feedback">
-                <!-- <?php
-                // $host = 'ep-restless-moon-a4x8trn5.us-east-1.aws.neon.tech';  
-                // $dbname = 'DSCOTECA';  
-                // $username = 'DSCOTECA_owner';
-                // $password = 'VJqgRHc2udj5';  
-                
-                // try {
-                //     $pdo = new PDO("mysql:host=$host;dbname=$dbname", $user, $pass);
-                //     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-                // } catch (PDOException $e) {
-                //     die("Erro ao conectar ao banco de dados: " . $e->getMessage());
-                // }
+                <?php
+                $host='ep-restless-moon-a4x8trn5-pooler.us-east-1.aws.neon.tech';
+                $dbname='DSCOTECA';
+                $username='DSCOTECA_owner';
+                $password ='VJqgRHc2udj5';
 
-                // if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-                //     $name = $_POST['name'];
-                //     $rating = $_POST['rating'];
-                //     $message = $_POST['message'];
-                //     $created_at = date('Y-m-d H:i:s');
+                try {
+                    $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
+                    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+                } catch (PDOException $e) {
+                    die("Erro na conexão: " . $e->getMessage());
+                }
 
-                //     // Insere os dados no banco de dados
-                //     $sql = "INSERT INTO feedbacks (name, rating, message, created_at) VALUES (:name, :rating, :message, :created_at)";
-                //     $stmt = $pdo->prepare($sql);
-                //     $stmt->bindParam(':name', $name);
-                //     $stmt->bindParam(':rating', $rating);
-                //     $stmt->bindParam(':message', $message);
-                //     $stmt->bindParam(':created_at', $created_at);
+                if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+                    $name = $_POST['name'] ?? null; 
+                    $rating = $_POST['rating'] ?? null; 
+                    $message = $_POST['message'] ?? null; 
 
-                //     if ($stmt->execute()) {
-                //         // Redireciona para a página com o modal de sucesso
-                //         header("Location: index.php?success=1");
-                //         exit();
-                //     } else {
-                //         echo "Erro ao enviar o feedback.";
-                //     }
-                // }
-                ?> -->
+                    if (empty($name) || empty($rating) || empty($message)) {
+                        echo "Todos os campos são obrigatórios!";
+                    } else {
+                        $sql = "INSERT INTO feedbacks (name, rating, comments, published_date) VALUES (:name, :rating, :comments, NOW())";
+                        $stmt = $pdo->prepare($sql);
+
+                        $stmt->bindParam(':name', $name);
+                        $stmt->bindParam(':rating', $rating);
+                        $stmt->bindParam(':comments', $message);
+
+                        if ($stmt->execute()) {
+                            echo "Feedback enviado com sucesso!";
+                        } else {
+                            echo "Erro ao enviar feedback. Tente novamente.";
+                        }
+                    }
+                }
+                ?>
 
                 <h1>Faça seu Feedback</h1>
                 <form action="" class="feedback-form" disabled>
                     <label for="name">
-                        <h2>Nome Completo</h2>
+                        <p class="title-form">Nome Completo</p>
                         <p>Ao responder, seu nome será registrado no nosso banco de dados e aparecerá junto com os outros feedbacks logo abaixo desse formulário.</p>
                     </label>
                     <input id="name" type="text">
@@ -255,39 +255,41 @@
                     <input type="submit" class="form-submit">
                 </form>
             </section>
-            <!-- <section class="main-section feedback-cards">
+            <section class="main-section feedback-cards">
                 <h1>Feedbacks</h1>
-                <div class="cards-content"> -->
+                <div class="cards-content">
+                    <?php
+                    // Recuperar feedbacks
+                    $sql = "SELECT * FROM feedbacks ORDER BY created_at DESC";
+                    $stmt = $pdo->query($sql);
+                    while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+                        echo "<div class='card'>";
+                        echo "    <div class='content-user'>";
+                        echo "        <img src='/assets/img/logo.png' alt=''>"; // Imagem do usuário
+                        echo "        <div class='cards-title-name'>";
+                        echo "            <h3 class='title-cards-user'>USUÁRIO</h3>";
+                        echo "            <p class='card-name'>{$row['name']}</p>"; // Nome do usuário
+                        echo "        </div>";
+                        echo "    </div>";
+                        echo "    <h3 class='title-cards-note'>NOTA</h3>";
+                        echo "    <div class='stars'>";
 
-            <!-- <p class="number-count">001</p> -->
-            <!-- <div class="card">
-                        <div class="content-user">
-                            <img src="/assets/img/logo.png" alt="">
-                            <div class="cards-title-name">
-                                <h3 class="title-cards-user">USUÁRIO</h3>
-                                <p class="card-name">NOME</p>
-                            </div>
-                        </div>
-                        <h3 class="title-cards-note">NOTA</h3>
-                        <div class="stars">
-                            <i class="fas fa-star active-star"></i>
-                            <i class="fas fa-star active-star"></i>
-                            <i class="fas fa-star active-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <h3 class="title-cards-note">AVALIAÇÃO</h3>
-                        <p class="card-text">Este é um exemplo de texto que contém exatamente quinhentos caracteres com
-                            espaços. A ideia é
-                            mostrar como um texto longo pode ser estruturado, mantendo a contagem correta de caracteres.
-                            Essa abordagem é útil em diversas situações, como em formulários de feedback ou comentários,
-                            onde é necessário manter um limite específico. Ao utilizar a contagem de caracteres, podemos
-                            garantir que a informação seja transmitida de maneira eficaz, sem exceder os limites
-                            estabelecidos para o espaço disponível. Isso é essencial para uma comunicação clara e
-                            objetiva.
-                        </p>
-                    </div> -->
-            <!-- </div> -->
+                        // Gerar estrelas com base na nota
+                        for ($i = 1; $i <= 5; $i++) {
+                            if ($i <= $row['rating']) {
+                                echo "        <i class='fas fa-star active-star'></i>"; // Estrela ativa
+                            } else {
+                                echo "        <i class='fas fa-star'></i>"; // Estrela inativa
+                            }
+                        }
+
+                        echo "    </div>";
+                        echo "    <h3 class='title-cards-note'>AVALIAÇÃO</h3>";
+                        echo "    <p class='card-text'>{$row['message']}</p>"; // Mensagem do feedback
+                        echo "</div>";
+                    }
+                    ?>
+                </div>
             </section>
         </main>
 

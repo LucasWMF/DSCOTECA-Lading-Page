@@ -15,7 +15,8 @@
     order: 1;
     width: 50%;
     height: 100%;
-    padding: 20px 120px 180px 120px;
+    /* padding: 20px 120px 180px 120px; */
+    padding: 0em 2em 10em 2em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,13 +31,13 @@
 }
 
 .letf-texts h1 {
-    font-size: 15em;
+    font-size: max(4em, 2.5em);
     text-align: left;
     font-weight: 300;
 }
 
 .letf-texts p {
-    font-size: 1.5em;
+    font-size: max(1.25, 1em);
     text-align: left;
     text-justify: inter-word;
     font-family: var(--font-roboto);
@@ -73,7 +74,8 @@
     order: 2;
     width: 50%;
     height: 100%;
-    padding: 0px 50px 60px 50px;
+    /* padding: 0px 50px 60px 50px; */
+    padding: 0em 1em;
     display: flex;
     align-items: center;
     justify-content: center;

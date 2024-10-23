@@ -2,25 +2,25 @@ const express = require('express');
 const phpExpress = require('php-express')({
     binPath: 'php' // Caminho para o executável do PHP (use 'php' se estiver no PATH do sistema)
 });
+const path = require('path');
 
 const app = express();
 
 // Define o .php como mecanismo para arquivos PHP
 app.engine('php', phpExpress.engine);
-
-// Define a pasta 'views' e o mecanismo de visualização como PHP
-app.set('api', './api');
+app.set('views', path.join(__dirname, 'api')); // Define a pasta 'api' como local para os arquivos PHP
 app.set('view engine', 'php');
 
 // Serve arquivos estáticos (CSS, JS, imagens) da pasta 'public'
-app.use(express.static('./public'));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Rota de teste simples para verificar o Node.js
 app.get('/', (req, res) => {
     console.log('Acessando a rota /');
-    res.render('index.php');
+    res.render('index.php'); // Renderiza o arquivo index.php na pasta api
 });
 
+// Outras rotas
 app.get('/gallery', (req, res) => {
     console.log('Acessando a Galeria /');
     res.render('gallery.php');
@@ -44,7 +44,6 @@ app.use((req, res, next) => {
 // Middleware básico para capturar erros
 app.use((err, req, res, next) => {
     console.error(err.stack);
-    console.log('ERROOOOOOOOOOOOO');
     res.status(500).send('Ocorreu um erro no servidor');
 });
 
