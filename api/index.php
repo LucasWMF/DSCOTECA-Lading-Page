@@ -175,42 +175,42 @@
 
 
             <section class="main-section feedback" id="feedback">
-                <?php
-                $host = 'ep-restless-moon-a4x8trn5.us-east-1.aws.neon.tech';  
-                $dbname = 'DSCOTECA';  
-                $username = 'DSCOTECA_owner';
-                $password = 'VJqgRHc2udj5';  
+                <!-- <?php
+                // $host = 'ep-restless-moon-a4x8trn5.us-east-1.aws.neon.tech';  
+                // $dbname = 'DSCOTECA';  
+                // $username = 'DSCOTECA_owner';
+                // $password = 'VJqgRHc2udj5';  
                 
-                try {
-                    $pdo = new PDO("mysql:host=$host;dbname=$dbname", $user, $pass);
-                    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-                } catch (PDOException $e) {
-                    die("Erro ao conectar ao banco de dados: " . $e->getMessage());
-                }
+                // try {
+                //     $pdo = new PDO("mysql:host=$host;dbname=$dbname", $user, $pass);
+                //     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+                // } catch (PDOException $e) {
+                //     die("Erro ao conectar ao banco de dados: " . $e->getMessage());
+                // }
 
-                if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-                    $name = $_POST['name'];
-                    $rating = $_POST['rating'];
-                    $message = $_POST['message'];
-                    $created_at = date('Y-m-d H:i:s');
+                // if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+                //     $name = $_POST['name'];
+                //     $rating = $_POST['rating'];
+                //     $message = $_POST['message'];
+                //     $created_at = date('Y-m-d H:i:s');
 
-                    // Insere os dados no banco de dados
-                    $sql = "INSERT INTO feedbacks (name, rating, message, created_at) VALUES (:name, :rating, :message, :created_at)";
-                    $stmt = $pdo->prepare($sql);
-                    $stmt->bindParam(':name', $name);
-                    $stmt->bindParam(':rating', $rating);
-                    $stmt->bindParam(':message', $message);
-                    $stmt->bindParam(':created_at', $created_at);
+                //     // Insere os dados no banco de dados
+                //     $sql = "INSERT INTO feedbacks (name, rating, message, created_at) VALUES (:name, :rating, :message, :created_at)";
+                //     $stmt = $pdo->prepare($sql);
+                //     $stmt->bindParam(':name', $name);
+                //     $stmt->bindParam(':rating', $rating);
+                //     $stmt->bindParam(':message', $message);
+                //     $stmt->bindParam(':created_at', $created_at);
 
-                    if ($stmt->execute()) {
-                        // Redireciona para a página com o modal de sucesso
-                        header("Location: index.php?success=1");
-                        exit();
-                    } else {
-                        echo "Erro ao enviar o feedback.";
-                    }
-                }
-                ?>
+                //     if ($stmt->execute()) {
+                //         // Redireciona para a página com o modal de sucesso
+                //         header("Location: index.php?success=1");
+                //         exit();
+                //     } else {
+                //         echo "Erro ao enviar o feedback.";
+                //     }
+                // }
+                ?> -->
 
                 <h1>Faça seu Feedback</h1>
                 <form action="" class="feedback-form" disabled>
