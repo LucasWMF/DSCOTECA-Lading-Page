@@ -36,6 +36,10 @@
       {
         "src": "/gallery",
         "dest": "api/gallery.php"
+      },
+      {
+        "src": "/conexao",
+        "dest": "api/conexao.php"
       }
     ]
   }  
