@@ -1,38 +1,37 @@
 {
     "functions": {
-      "/views/api/index.php": {
+      "views/index.php": {
         "runtime": "vercel-php@0.7.1"
       }
     },
     "routes": [
       {
         "src": "/public/(.*)",
-        "dest": "/public/$1"
+        "dest": "public/$1"
       },
       {
-        "src": "/views/api/index.php",
-        "dest": "/views/api/index.php"
+        "src": "/views/index.php",
+        "dest": "views/index.php"
       },
       {
-        "src": "/views/api/(.*)",
-        "dest": "/views/api/index.php"
+        "src": "/views/(.*)",
+        "dest": "views/index.php"
       },
       {
         "src": "/css/(.*)",
-        "dest": "/public/css/$1"
+        "dest": "public/css/$1"
       },
       {
         "src": "/image/(.*)",
-        "dest": "/public/image/$1"
+        "dest": "public/image/$1"
       },
       {
         "src": "/js/(.*)",
-        "dest": "/public/js/$1"
+        "dest": "public/js/$1"
       },
       {
         "src": "/(.*)",
-        "dest": "/views/api/index.php"
+        "dest": "views/index.php"
       }
     ]
-  }
-  
+  }  
