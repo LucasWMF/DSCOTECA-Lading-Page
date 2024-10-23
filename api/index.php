@@ -302,12 +302,12 @@
             </footer>
 
             <?php
-            $host = 'ep-royal-frost-a4kh0xfk-pooler.us-east-1.aws.neon.tech';
-            $username = 'DSCOTECA_owner';
-            $password = 'VJqgRHc2udj5';
-            $dbname = 'DSCOTECA';
+            $PGHOST = 'ep-royal-frost-a4kh0xfk-pooler.us-east-1.aws.neon.tech';
+            $PGUSER = 'DSCOTECA_owner';
+            $PGPASSWORD = 'VJqgRHc2udj5';
+            $PGDATABASE = 'DSCOTECA';
             
-            $conn = new mysqli($host, $username, $password, $dbname);
+            $conn = new mysqli($PGHOST, $PGUSER, $PGPASSWORD, $PGDATABASE);
 
             if ($conn->connect_error) {
                 die("Conexão falhou: " . $conn->connect_error);
