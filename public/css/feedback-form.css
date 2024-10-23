@@ -30,7 +30,7 @@
     text-align: justify;
     font-family: var(--font-raleway);
     padding: 0.2vw 0vw;
-    font-size: 1vw;
+    font-size: 0.8em;
 }
 
 .feedback-form {
@@ -76,13 +76,13 @@
     font-weight: 600;
     font-family: var(--font-jersey);
     font-style: normal;
-    font-size: 1.5vw;
+    font-size: 1em;
     padding: 1vw 0vw;
     flex-direction: column;
 }
 
 .feedback-form label h2{
-    font-size: 1.5vw;
+    font-size: 1em;
 }
 
 .feedback-form input,
