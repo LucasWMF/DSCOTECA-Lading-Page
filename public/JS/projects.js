@@ -15,14 +15,14 @@ document.addEventListener('DOMContentLoaded', function () {
             'project2': ['Nosso projeto consiste em um sistema de avaliação para o nosso site, onde cada feedback enviado é armazenado no banco de dados, sendo possível armazenar os feedbacks de todos os 3 dias de evento. Além disso, implementamos um sistema utilizando Arduino com um sensor de som, capaz de detectar diferentes frequências musicais (graves, médios e agudos). Para cada faixa de frequência, uma cor correspondente é emitida em formato de serpente, criando uma experiência visual interativa e sincronizada com o som.'],
             'project3': ['O nosso projeto consiste em um jogo interativo desenvolvido com Arduino e Tinkercad onde os participantes devem adivinhar a música tocada. O jogo possui dois botões e quem apertar primeiro e responder corretamente à música ganha. As melodias são reproduzidas por um buzzer piezoelétrico no Tinkercad, que permite criar notas reconhecíveis. A dinâmica é simples e empolgante, pois assim que a música inicia, os jogadores competem para pressionar o botão antes do outro e, em seguida, falar o nome da música ou do cantor.'],
             'project4': [`Os Grupos 4, 5 e 6 uniram forças para criar um mini fliperama, oferecendo uma experiência divertida e interativa.
-<br><br>
-Grupo 4 desenvolveu um jogo inspirado no clássico Super Mario, onde o desafio é evitar que o personagem colida com os tubos. Além disso, eles também foram responsáveis pelas lembrancinhas do evento.
-<br><br>
-Grupo 5 trouxe um jogo baseado no lendário Tetris, além de cuidar da decoração dos arcades e criar o site para acesso público.
-<br><br>
-Grupo 6 elaborou um jogo de fases com três níveis, permitindo que os jogadores escolham entre dois personagens. O objetivo é coletar moedas para avançar. Além disso, eles criaram um quiz que, ao acertar pelo menos cinco perguntas, dá acesso ao jogo Just Dance.
-<br><br>
-O evento também contará com gincanas inspiradas nas tradicionais festas americanas, garantindo ainda mais diversão para todos os participantes.`],
+            <br><br>
+            Grupo 4 desenvolveu um jogo inspirado no clássico Super Mario, onde o desafio é evitar que o personagem colida com os tubos. Além disso, eles também foram responsáveis pelas lembrancinhas do evento entregue no projeto deles e pela decoração de alguns arcades.
+            <br><br>
+            Grupo 5 trouxe um jogo baseado no lendário Tetris, além de cuidar da decoração de um dos arcades e criar o site para acesso público.
+            <br><br>
+            Grupo 6 elaborou um jogo de fases com três níveis, permitindo que os jogadores escolham entre dois personagens. O objetivo é coletar moedas para avançar. Além disso, eles criaram um quiz que ao jogar dá acesso ao jogo Just Dance.
+            <br><br>
+            O evento também contará com gincanas inspiradas nas tradicionais festas americanas, garantindo ainda mais diversão para todos os participantes.`],
         }
     };
 

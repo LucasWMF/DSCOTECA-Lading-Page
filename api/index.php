@@ -173,45 +173,45 @@
             </div>
 
 
-            <section class="main-section feedback" id="feedback">
-                <?php
-                $host = 'ep-crimson-mountain-a41oh1wq-pooler.us-east-1.aws.neon.tech';
-                $dbname = 'DSCOTECA';
-                $username = 'DSCOTECA_owner';
-                $password = 'VJqgRHc2udj5';
+            <!-- <section class="main-section feedback" id="feedback"> -->
+            <?php
+            // $host = 'ep-crimson-mountain-a41oh1wq-pooler.us-east-1.aws.neon.tech';
+            // $dbname = 'DSCOTECA';
+            // $username = 'DSCOTECA_owner';
+            // $password = 'VJqgRHc2udj5';
 
-                try {
-                    $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
-                    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-                    echo "Conexão estabelecida com sucesso."; // Para depuração
-                } catch (PDOException $e) {
-                    die("Erro na conexão1: " . $e->getMessage());
-                }
+            // try {
+            //     $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
+            //     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            //     echo "Conexão estabelecida com sucesso."; // Para depuração
+            // } catch (PDOException $e) {
+            //     die("Erro na conexão1: " . $e->getMessage());
+            // }
 
-                if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-                    $name = $_POST['name'] ?? null;
-                    $rating = $_POST['rating'] ?? null;
-                    $message = $_POST['message'] ?? null;
+            // if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            //     $name = $_POST['name'] ?? null;
+            //     $rating = $_POST['rating'] ?? null;
+            //     $message = $_POST['message'] ?? null;
 
-                    if (empty($name) || empty($rating) || empty($message)) {
-                        echo "Todos os campos são obrigatórios!";
-                    } else {
-                        $sql = "INSERT INTO feedbacks (name, rating, comments, published_date) VALUES (:name, :rating, :comments, NOW())";
-                        $stmt = $pdo->prepare($sql);
+            //     if (empty($name) || empty($rating) || empty($message)) {
+            //         echo "Todos os campos são obrigatórios!";
+            //     } else {
+            //         $sql = "INSERT INTO feedbacks (name, rating, comments, published_date) VALUES (:name, :rating, :comments, NOW())";
+            //         $stmt = $pdo->prepare($sql);
 
-                        $stmt->bindParam(':name', $name);
-                        $stmt->bindParam(':rating', $rating);
-                        $stmt->bindParam(':comments', $message);
+            //         $stmt->bindParam(':name', $name);
+            //         $stmt->bindParam(':rating', $rating);
+            //         $stmt->bindParam(':comments', $message);
 
-                        if ($stmt->execute()) {
-                            echo "Feedback enviado com sucesso!";
-                        } else {
-                            echo "Erro ao enviar feedback. Tente novamente.";
-                        }
-                    }
-                }
-                ?>
-
+            //         if ($stmt->execute()) {
+            //             echo "Feedback enviado com sucesso!";
+            //         } else {
+            //             echo "Erro ao enviar feedback. Tente novamente.";
+            //         }
+            //     }
+            // }
+            ?>
+            <!-- 
                 <h1>Faça seu Feedback</h1>
                 <form action="" class="feedback-form" disabled>
                     <label for="name">
@@ -259,47 +259,64 @@
             <section class="main-section feedback-cards">
                 <h1>Feedbacks</h1>
                 <div class="cards-content">
-                    <?php
-                    $sql = "SELECT * FROM feedbacks ORDER BY created_at DESC";
-                    $stmt = $pdo->query($sql);
-                    while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-                        echo "<div class='card'>";
-                        echo "    <div class='content-user'>";
-                        echo "        <img src='/assets/img/logo.png' alt=''>"; // Imagem do usuário
-                        echo "        <div class='cards-title-name'>";
-                        echo "            <h3 class='title-cards-user'>USUÁRIO</h3>";
-                        echo "            <p class='card-name'>{$row['name']}</p>"; // Nome do usuário
-                        echo "        </div>";
-                        echo "    </div>";
-                        echo "    <h3 class='title-cards-note'>NOTA</h3>";
-                        echo "    <div class='stars'>";
+                     <?php
+                        // $sql = "SELECT * FROM feedbacks ORDER BY created_at DESC";
+                        // $stmt = $pdo->query($sql);
+                        // while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+                        //     echo "<div class='card'>";
+                        //     echo "    <div class='content-user'>";
+                        //     echo "        <img src='/assets/img/logo.png' alt=''>"; // Imagem do usuário
+                        //     echo "        <div class='cards-title-name'>";
+                        //     echo "            <h3 class='title-cards-user'>USUÁRIO</h3>";
+                        //     echo "            <p class='card-name'>{$row['name']}</p>"; // Nome do usuário
+                        //     echo "        </div>";
+                        //     echo "    </div>";
+                        //     echo "    <h3 class='title-cards-note'>NOTA</h3>";
+                        //     echo "    <div class='stars'>";
 
-                        // Gerar estrelas com base na nota
-                        for ($i = 1; $i <= 5; $i++) {
-                            if ($i <= $row['rating']) {
-                                echo "        <i class='fas fa-star active-star'></i>"; // Estrela ativa
-                            } else {
-                                echo "        <i class='fas fa-star'></i>"; // Estrela inativa
-                            }
-                        }
+                        //     // Gerar estrelas com base na nota
+                        //     for ($i = 1; $i <= 5; $i++) {
+                        //         if ($i <= $row['rating']) {
+                        //             echo "        <i class='fas fa-star active-star'></i>"; // Estrela ativa
+                        //         } else {
+                        //             echo "        <i class='fas fa-star'></i>"; // Estrela inativa
+                        //         }
+                        //     }
 
-                        echo "    </div>";
-                        echo "    <h3 class='title-cards-note'>AVALIAÇÃO</h3>";
-                        echo "    <p class='card-text'>{$row['message']}</p>"; // Mensagem do feedback
-                        echo "</div>";
-                    }
-                    ?>
-                </div>
+                        //     echo "    </div>";
+                        //     echo "    <h3 class='title-cards-note'>AVALIAÇÃO</h3>";
+                        //     echo "    <p class='card-text'>{$row['message']}</p>"; // Mensagem do feedback
+                        //     echo "</div>";
+                        // }
+                        ?> -->
+            <!-- </div>
             </section>
-        </main>
+        </main> -->
 
-        <footer class="footer-content">
-            <h1>EPA 2024</h1>
-            <h1>DSCOTECA - 2°DS-AMS</h1>
-            <a href="https://www.instagram.com/epa_2ds_ams/" class="instagram-button" target="_blank">
-                <i class="fa-brands fa-instagram"></i> Siga-nos no Instagram
-            </a>
-        </footer>
+            <footer class="footer-content">
+                <h1>EPA 2024</h1>
+                <h1>DSCOTECA - 2°DS-AMS</h1>
+                <a href="https://www.instagram.com/epa_2ds_ams/" class="instagram-button" target="_blank">
+                    <i class="fa-brands fa-instagram"></i> Siga-nos no Instagram
+                </a>
+            </footer>
+
+            <?php
+            $host = 'ep-restless-moon-a4x8trn5.us-east-1.aws.neon.tech';
+            $dbname = 'DSCOTECA';
+            $username = 'DSCOTECA_owner';
+            $password = 'VJqgRHc2udj5';
+
+            try {
+                $pdo = new PDO("mysql:host=$host;dbname=$dbname", $user, $pass);
+                $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            } catch (PDOException $e) {
+                die("Erro ao conectar ao banco de dados: " . $e->getMessage());
+            }
+
+            echo "<h1>Teste Conexão</h1>";
+            ?>
+
 
     </div>
 
