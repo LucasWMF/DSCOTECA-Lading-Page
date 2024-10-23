@@ -9,7 +9,7 @@ const app = express();
 app.engine('php', phpExpress.engine);
 
 // Define a pasta 'views' e o mecanismo de visualização como PHP
-app.set('views', './views');
+app.set('api', './api');
 app.set('view engine', 'php');
 
 // Serve arquivos estáticos (CSS, JS, imagens) da pasta 'public'
