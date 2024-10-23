@@ -11,7 +11,6 @@
     <title>2°DS-AMS | EPA 2024</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/root.css">
-    <link rel="stylesheet" href="/css/header.css">
     <link rel="icon" href="/image/logo.png">
 </head>
 
