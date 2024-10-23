@@ -26,8 +26,8 @@
             "dest": "/public/image/$1"
         },
         {
-            "src": "/JS/(.*)",
-            "dest": "/public/JS/$1"
+            "src": "/js/(.*)",
+            "dest": "/public/js/$1"
         },
         {
             "src": "/(.*)",
