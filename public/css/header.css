@@ -30,13 +30,13 @@
 }
 
 .letf-texts h1 {
-    font-size: 2.5em;
+    font-size: 5em;
     text-align: left;
     font-weight: 300;
 }
 
 .letf-texts p {
-    font-size: 1em;
+    font-size: 1.5em;
     text-align: left;
     text-justify: inter-word;
     font-family: var(--font-roboto);
@@ -80,9 +80,9 @@
 }
 
 .right img {
-    width: max(40em,30em,35em);
-    height: max(40em,30em,35em);
-    aspect-ratio: 1/1;
+    width: max(30em, 40em);
+    height: max(30em, 40em);
+    aspect-ratio: 1 / 1; 
 }
 
 @media screen and (max-width: 480px) {
