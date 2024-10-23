@@ -21,6 +21,11 @@ app.get('/', (req, res) => {
     res.render('index.php');
 });
 
+app.get('/gallery', (req, res) => {
+    console.log('Acessando a Galeria /');
+    res.render('gallery.php');
+});
+
 // Rota para renderizar o arquivo PHP 'test.php'
 app.get('/php-test', (req, res) => {
     res.render('test.php');
