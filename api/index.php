@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <!-- <?php
-    echo '<h1>Teste</h1>';
+    // echo '<h1>Teste</h1>';
 ?> -->
 
 <head>
