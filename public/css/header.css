@@ -104,4 +104,8 @@
     .header-content{
         flex-direction: column;
     }
+
+    .right img {
+        display: none;
+    }
 }

@@ -1,3 +1,3 @@
 <?php
-echo "Teste";
+echo "<h1>Teste Galeria</h1>";
 ?>

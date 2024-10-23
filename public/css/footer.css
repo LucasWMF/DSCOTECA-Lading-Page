@@ -25,13 +25,6 @@
     text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-    .footer-content h1 {
-        font-size: 1.2em; /* Ajusta o tamanho da fonte em telas menores */
-    }
-}
-
 .instagram-button {
     text-decoration: none;
     background: var(--instagram-gradient); /* Cor de fundo do botão do Instagram */
@@ -49,4 +42,11 @@
 
 .instagram-button:hover {
     background-color: #C13584; /* Cor ao passar o mouse */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .footer-content h1 {
+        font-size: 1.2em; /* Ajusta o tamanho da fonte em telas menores */
+    }
 }
