@@ -85,11 +85,9 @@
     aspect-ratio: 1/1;
 }
 
-@media screen and (max-width: 800px){
-
+@media screen and (max-width: 480px) {
     .header-content{
         flex-direction: column;
-        /* height: auto; */
         height: 90svh;
     }
 
@@ -100,10 +98,10 @@
     .right img{
         aspect-ratio: 1/1;
     }
+}
 
-    @media (max-width: 768px) {
-        .header-content{
-            flex-direction: column;
-        }
+@media screen and (max-width: 768px) {
+    .header-content{
+        flex-direction: column;
     }
 }
