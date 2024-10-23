@@ -32,6 +32,10 @@
       {
         "src": "/(.*)",
         "dest": "api/index.php"
+      },
+      {
+        "src": "/gallery",
+        "dest": "api/gallery.php"
       }
     ]
   }  
