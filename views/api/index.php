@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<?php
+<!-- <?php
     echo '<h1>Teste</h1>';
-?>
+?> -->
 
 <head>
     <meta charset="UTF-8">
