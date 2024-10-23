@@ -1,6 +1,6 @@
 {
     "functions": {
-      "views/index.php": {
+      "/viewsapi/index.php": {
         "runtime": "vercel-php@0.7.1"
       }
     },
@@ -10,12 +10,12 @@
         "dest": "/public/$1"
       },
       {
-        "src": "/views/index.php",
-        "dest": "/views/index.php"
+        "src": "/views/api/index.php",
+        "dest": "/views/api/index.php"
       },
       {
-        "src": "/views/(.*)",
-        "dest": "/views/index.php"
+        "src": "/views/api/(.*)",
+        "dest": "/views/api/index.php"
       },
       {
         "src": "/css/(.*)",
@@ -31,7 +31,7 @@
       },
       {
         "src": "/(.*)",
-        "dest": "/views/index.php"
+        "dest": "/views/api/index.php"
       }
     ]
   }
