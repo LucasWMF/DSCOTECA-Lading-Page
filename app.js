@@ -26,6 +26,11 @@ app.get('/gallery', (req, res) => {
     res.render('gallery.php');
 });
 
+app.get('/conexao', (req, res) => {
+    console.log('Acessando a Conexão /');
+    res.render('conexao.php');
+});
+
 // Rota para renderizar o arquivo PHP 'test.php'
 app.get('/php-test', (req, res) => {
     res.render('test.php');
