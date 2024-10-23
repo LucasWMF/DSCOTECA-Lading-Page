@@ -14,8 +14,8 @@
             "dest": "/views/index.php"
         },
         {
-            "src": "/api/(.*)",
-            "dest": "/api/index.php"
+            "src": "/views/(.*)",
+            "dest": "/views/index.php"
         },
         {
             "src": "/css/(.*)",
@@ -31,7 +31,7 @@
         },
         {
             "src": "/(.*)",
-            "dest": "/api/index.php"
+            "dest": "/views/index.php"
         }
     ]
 }
