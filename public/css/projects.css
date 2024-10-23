@@ -35,9 +35,9 @@
     color: var(--color-white);
     font-weight: 600;
     font-style: normal;
-    font-size: 2em;
+    font-size: 4em;
 
-    padding: 0.5em 0vw;
+    padding: 1em 0vw;
     font-feature-settings: 'pnum' on, 'lnum' on;
     text-decoration: underline;
     text-decoration-color: transparent;
