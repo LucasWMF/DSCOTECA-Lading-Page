@@ -37,7 +37,7 @@
     font-style: normal;
     font-size: 4em;
 
-    padding: 1em 0vw;
+    padding: 0.5em 0vw;
     font-feature-settings: 'pnum' on, 'lnum' on;
     text-decoration: underline;
     text-decoration-color: transparent;
@@ -51,27 +51,18 @@
 
 .project-item:hover .h1-project:after {
     content: '';
-    /* Cria um pseudo-elemento */
     position: absolute;
     left: 0;
     top: 80%;
-    /* Posiciona o sublinhado */
     height: 2px;
-    /* Espessura do sublinhado */
     width: 100%;
-    /* O sublinhado cobre toda a largura do texto */
-    /* background-color: red;  */
     animation: rgb 3s infinite;
-    /* Aplica a animação */
     transform: scaleX(0);
-    /* Inicia invisível */
     transition: transform 0.3s ease;
-    /* Transição suave */
 }
 
 .project-item:hover .h1-project:after {
     transform: scaleX(1);
-    /* Mostra o sublinhado no hover */
 }
 
 /* .text-img {
@@ -95,7 +86,7 @@
     background: rgba(255, 255, 255, 0.2);
     padding: 1em;
     font-family: var(--font-raleway);
-    font-size: 0.8em;
+    font-size: 2em;
     color: var(--color-white);
     text-align: justify;
     font-feature-settings: 'pnum' on, 'lnum' on;
