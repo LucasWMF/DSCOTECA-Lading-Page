@@ -1,37 +1,38 @@
 {
     "functions": {
-        "views/index.php": {
-            "runtime": "vercel-php@0.7.1"
-        }
+      "views/index.php": {
+        "runtime": "vercel-php@0.7.1"
+      }
     },
     "routes": [
-        {
-            "src": "/public/(.*)",
-            "dest": "/public/$1"
-        },
-        {
-            "src": "/views/index.php",
-            "dest": "/views/index.php"
-        },
-        {
-            "src": "/views/(.*)",
-            "dest": "/views/index.php"
-        },
-        {
-            "src": "/css/(.*)",
-            "dest": "/public/css/$1"
-        },
-        {
-            "src": "/image/(.*)",
-            "dest": "/public/image/$1"
-        },
-        {
-            "src": "/js/(.*)",
-            "dest": "/public/js/$1"
-        },
-        {
-            "src": "/(.*)",
-            "dest": "/views/index.php"
-        }
+      {
+        "src": "/public/(.*)",
+        "dest": "/public/$1"
+      },
+      {
+        "src": "/views/index.php",
+        "dest": "/views/index.php"
+      },
+      {
+        "src": "/views/(.*)",
+        "dest": "/views/index.php"
+      },
+      {
+        "src": "/css/(.*)",
+        "dest": "/public/css/$1"
+      },
+      {
+        "src": "/image/(.*)",
+        "dest": "/public/image/$1"
+      },
+      {
+        "src": "/js/(.*)",
+        "dest": "/public/js/$1"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/views/index.php"
+      }
     ]
-}
+  }
+  
