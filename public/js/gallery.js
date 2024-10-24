@@ -50,12 +50,7 @@ const gallery = [
     }
 ];
 
-// Seleciona elementos do modal
-const modal = document.getElementById('modal');
-const modalImage = document.getElementById('modalImage');
-const caption = document.getElementById('caption');
-const instagram = document.getElementById('instagram');
-const downloadLink = document.getElementById('downloadLink');
+let instagramLink = ''; // Defina instagramLink no escopo global
 
 // Cria elementos de imagem dinamicamente e adiciona ao DOM
 gallery.forEach(item => {
@@ -78,9 +73,10 @@ gallery.forEach(item => {
         modalImage.src = img.src; // Define a imagem do modal
         caption.innerText = img.alt; // Define a legenda
 
-        let instagram = `https://www.instagram.com/${item.instagramUser}/`; // Define o link do Instagram
-        instagram.href = `https://www.instagram.com/${item.instagramUser}/`; // Define o link do Instagram
-        // console.log(item.instagramUser)
+        // Define o instagramLink de forma global
+        instagramLink = `https://www.instagram.com/${item.instagramUser}/`;
+        instagram.href = instagramLink;
+        
         downloadLink.href = img.src; // Define o link para download
     });
 
@@ -116,11 +112,8 @@ document.addEventListener('keydown', (event) => {
     // Abrir Instagram com Ctrl + I
     if (modal.style.display === 'flex' && event.ctrlKey && event.key.toLowerCase() === 'i') {
         event.preventDefault(); // Impede a ação padrão do navegador
-        // console.log('AAAA')
-
-        // Pega o link do Instagram baseado na imagem atual do modal
-        if (instagram) {
-            window.open(`https://www.instagram.com/${instagram}/`, '_blank'); // Abre o link do Instagram em uma nova aba
+        if (instagramLink) {
+            window.open(instagramLink, '_blank'); // Abre o link do Instagram em uma nova aba
         }
     }
 });
