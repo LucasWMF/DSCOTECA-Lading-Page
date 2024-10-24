@@ -31,7 +31,7 @@
 }
 
 .letf-texts h1 {
-    font-size: max(2.5em, 4em);
+    font-size: 4em;
     text-align: left;
     font-weight: 300;
 }
@@ -84,30 +84,35 @@
 .right img {
     width: max(30em, 40em);
     height: max(30em, 40em);
-    aspect-ratio: 1 / 1; 
+    aspect-ratio: 1 / 1;
 }
 
 @media screen and (max-width: 480px) {
-    .header-content{
+    .header-content {
         flex-direction: column;
         height: 90svh;
     }
 
-    .left, .right {
+    .left,
+    .right {
         width: 100%;
     }
 
-    .right img{
+    .right img {
         aspect-ratio: 1/1;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .header-content{
+    .header-content {
         flex-direction: column;
     }
 
     .right {
         display: none;
+    }
+
+    .left-texts h1 {
+        font-size: 2.5em;
     }
 }
