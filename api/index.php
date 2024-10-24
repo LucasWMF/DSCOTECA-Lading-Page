@@ -29,7 +29,7 @@
                         <li class="nav-item"><a href="#sponsor" title="Teste">Patrocinadores</a></li>
                         <li class="nav-item"><a href="#projects">Projetos</a></li>
                         <li class="nav-item"><a href="#gallery">Galeria</a></li>
-                        <li class="nav-item"><a href="#feedback">Feedbacks</a></li>
+                        <!-- <li class="nav-item"><a href="#feedback">Feedbacks</a></li> -->
                     </ul>
                 </div>
 
@@ -51,9 +51,9 @@
                     <li class="nav-item">
                         <a href="#gallery">Galeria</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#feedback">Feedbacks</a>
-                    </li>
+                    <!-- <li class="nav-item"> -->
+                    <!-- <a href="#feedback">Feedbacks</a> -->
+                    <!-- </li> -->
                 </ul>
             </nav>
         </div>
@@ -150,16 +150,24 @@
 
             <div class="gallery-content" id="gallery">
                 <section class="main-section gallery-content">
-                <div class="gallery-content-text">
-                    <h1>GALERIA DE FOTOS</h1>
-                    <div style="gap: 0;">
-                        <p>Quer adicionar sua foto nesse mural? Nos envie via <a href="https://www.instagram.com/epa_2ds_ams/" target="_blank">instagram</a> que iremos adicionar aqui.</p>
-                        <p>Ao enviar sua foto, você concorda em autorizar a publicação e o uso da imagem em nosso site, sem fins lucrativos. As imagens podem ser baixadas por qualquer visitante do site. Você pode solicitar a remoção da sua imagem a qualquer momento. Agradecemos pela sua colaboração!</p>
+                    <div class="gallery-content-text">
+                        <h1>GALERIA DE FOTOS</h1>
+                        <div style="gap: 1.25em; display:flex; flex-direction: column;">
+                            <p>Quer adicionar sua foto nesse mural? Nos envie via <a href="https://www.instagram.com/epa_2ds_ams/" target="_blank">instagram</a> que iremos adicionar aqui.</p>
+                            <p>Ao enviar sua foto, você concorda em autorizar a publicação e o uso da imagem em nosso site, sem fins lucrativos. As imagens podem ser baixadas por qualquer visitante do site. Você pode solicitar a remoção da sua imagem a qualquer momento. Agradecemos pela sua colaboração!</p>
+                            <p>Basta clicar nas imagens para os botões aparecerem</p>
+                            <div class="tutorial">
+                                <p><i class="fa-solid fa-xmark"></i> | Fechar Modal</p>
+                                <p>
+                                    <i class="fa-brands fa-instagram"></i> | Abrir instagram da pessoa que enviou a foto
+                                </p>
+                                <p> <i class="fa-solid fa-download"></i> | Fazer Dowload da Foto</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
 
                     <div class="gallery">
-                        <img src="/image/imagem2.jpeg" alt="Imagem 2" class="gallery-item largeX largeY">
+                        <!-- <img src="/image/imagem2.jpeg" alt="Imagem 2" class="gallery-item largeX largeY">
                         <img src="/image/imagem1.jpeg" alt="Imagem 1" class="gallery-item">
                         <img src="/image/imagem3.jpeg" alt="Imagem 3" class="gallery-item">
                         <img src="/image/imagem4.jpeg" alt="Imagem 4" class="gallery-item">
@@ -169,13 +177,14 @@
                         <img src="/image/imagem5.jpeg" alt="Imagem 5" class="gallery-item">
                         <img src="/image/imagem6.jpeg" alt="Imagem 6" class="gallery-item">
                         <img src="/image/imagem5.jpeg" alt="Imagem 5" class="gallery-item">
-                        <img src="/image/imagem6.jpeg" alt="Imagem 6" class="gallery-item">
+                        <img src="/image/imagem6.jpeg" alt="Imagem 6" class="gallery-item"> -->
                     </div>
 
                     <div id="modal" class="modal">
-                        <span class="close" id="close">&times;</span>
+                        <span class="close" id="close"><i class="fa-solid fa-xmark"></i></span>
                         <img class="modal-content" id="modalImage" alt="Imagem tela cheia">
                         <div id="caption"></div>
+                        <a id="instagram" href="{data.instagram}" class="instagram-button-owner" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                         <a id="downloadLink" href="#" download class="download-button"><i class="fa-solid fa-download"></i></a>
                     </div>
 

@@ -1,7 +1,7 @@
 /* Section Gallery */
 /* Seções de Galeria */
 
-.gallery-content{
+.gallery-content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,7 +20,7 @@
     width: 90%;
 }
 
-.gallery-content-text h1{
+.gallery-content-text h1 {
     color: var(--color-white);
     font-weight: 600;
     font-style: normal;
@@ -30,14 +30,14 @@
     text-align: center;
 }
 
-.gallery-content-text p{
+.gallery-content-text p {
     font-size: max(0.8em, 1em);
     text-align: center;
     color: var(--color-white);
     font-family: var(--font-raleway);
 }
 
-.gallery-content-text a{
+.gallery-content-text a {
     color: var(--color-azul-pastel);
 }
 
@@ -60,15 +60,15 @@
     justify-self: center;
 }
 
-.largeX{
+.largeX {
     grid-column: auto / 2 span;
 }
 
-.largeY{
+.largeY {
     grid-row: auto / 2 span;
 }
 
-.gallery h1{
+.gallery h1 {
     font-size: max(2em, 4em);
 }
 
@@ -94,7 +94,7 @@
 
 .close {
     color: red;
-    font-size: 40px;
+    font-size: 2.5em;
     font-weight: bold;
     position: absolute;
     top: 20px;
@@ -106,7 +106,7 @@
     position: absolute;
     bottom: 20px;
     right: 20px;
-    font-size: 30px;
+    font-size: 2.5em;
     color: white;
     background-color: transparent;
     border: none;
@@ -120,11 +120,44 @@
     /* Muda a cor ao passar o mouse */
 }
 
-@media screen and (max-width: 785px){
+.instagram-button-owner {
+    position: absolute;
+    bottom: 80px;
+    right: 20px;
+    font-size: 2.8em;
+    color: rgba(255, 255, 255, 0.2);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    z-index: 1;
+}
+
+.instagram-button-owner i {
+    background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.tutorial {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1em;
+}
+
+@media screen and (max-width: 1170px) {
+    .modal-content {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 785px) {
     .gallery {
         width: 90%;
         height: max-content;
-        background: rgba(255, 255, 255, 0.2);    
+        background: rgba(255, 255, 255, 0.2);
         border-radius: 0.5vw;
         display: grid;
         grid-template-columns: repeat(1, auto);
@@ -146,5 +179,9 @@
     .modal {
         align-self: center;
         justify-self: center;
+    }
+
+    .largeX {
+        grid-column: auto;
     }
 }
