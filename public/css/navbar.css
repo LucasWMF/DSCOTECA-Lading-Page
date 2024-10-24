@@ -93,6 +93,10 @@
 }
 
 @media screen and (max-width: 800px){
+    .navbar-content{
+        height: 100px;
+    }
+
     .navbar-logo img {
         display: none;
     }

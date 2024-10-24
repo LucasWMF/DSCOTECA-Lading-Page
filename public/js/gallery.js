@@ -2,49 +2,49 @@ const gallery = [
     {
         src: "/image/imagem5.jpeg",
         alt: "Imagem 5",
-        instagram: "https://www.instagram.com/instagram1/",
+        instagramUser: "epa_2ds_ams",
         largeY: true,
         largeX: true
     },
     {
         src: "/image/imagem1.jpeg",
         alt: "Imagem 1",
-        instagram: "https://www.instagram.com/weareams/",
+        instagramUser: "epa_2ds_ams",
         largeY: false,
         largeX: false
     },
     {
         src: "/image/imagem2.jpeg",
         alt: "Imagem 2",
-        instagram: "https://www.instagram.com/instagram1/",
+        instagramUser: "epa_2ds_ams",
         largeY: false,
         largeX: false
     },
     {
         src: "/image/imagem3.jpeg",
         alt: "Imagem 3",
-        instagram: "https://www.instagram.com/instagram3/",
+        instagramUser: "epa_2ds_ams",
         largeY: false,
         largeX: false
     },
     {
         src: "/image/imagem4.jpeg",
         alt: "Imagem 4",
-        instagram: "https://www.instagram.com/weareams/",
+        instagramUser: "epa_2ds_ams",
         largeY: false,
         largeX: false
     },
     {
         src: "/image/imagem6.jpeg",
         alt: "Imagem 6",
-        instagram: "https://www.instagram.com/instagram3/",
+        instagramUser: "epa_2ds_ams",
         largeY: false,
         largeX: false
     },
     {
         src: "/image/imagem7.jpeg",
         alt: "Imagem 7",
-        instagram: "https://www.instagram.com/instagram3/",
+        instagramUser: "epa_2ds_ams",
         largeY: true,
         largeX: false
     },
@@ -57,6 +57,7 @@ const modalImage = document.getElementById('modalImage');
 const caption = document.getElementById('caption');
 const instagramLink = document.getElementById('instagram');
 const downloadLink = document.getElementById('downloadLink');
+const instagramUserInput = document.getElementById('instagramUser');
 
 // Cria elementos de imagem dinamicamente e adiciona ao DOM
 gallery.forEach(item => {
@@ -78,7 +79,15 @@ gallery.forEach(item => {
         modal.style.display = 'flex'; // Exibe o modal
         modalImage.src = img.src; // Define a imagem do modal
         caption.innerText = img.alt; // Define a legenda
-        instagramLink.href = item.instagram; // Define o link do Instagram
+
+        // Obtém o nome de usuário do input e constrói o link do Instagram
+        const instagramUser = instagramUserInput.value.trim();
+        if (instagramUser) {
+            instagramLink.href = `https://www.instagram.com/${instagramUser}/`; // Define o link do Instagram
+        } else {
+            instagramLink.href = `https://www.instagram.com/${item.instagramUser}/`; // Define o link do Instagram padrão
+        }
+
         downloadLink.href = img.src; // Define o link para download
     });
 

@@ -29,9 +29,43 @@
                         <li class="nav-item"><a href="#sponsor" title="Teste">Patrocinadores</a></li>
                         <li class="nav-item"><a href="#projects">Projetos</a></li>
                         <li class="nav-item"><a href="#gallery">Galeria</a></li>
+                        <li class="nav-item"><a href="#footer">Footer</a></li>
                         <!-- <li class="nav-item"><a href="#feedback">Feedbacks</a></li> -->
                     </ul>
                 </div>
+
+                <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                        const navContainer = document.querySelector('.nav-container');
+                        const nav = document.querySelector('nav');
+                        const button = document.querySelector('.button_res i');
+                        const navRes = document.querySelector('.nav_res');
+
+                        // Função para rolar até a seção desejada
+                        function scrollToSection(selector) {
+                            const section = document.querySelector(selector);
+                            const navHeight = nav.offsetHeight;
+
+                            window.scrollTo({
+                                top: section.offsetTop - navHeight,
+                                behavior: 'smooth'
+                            });
+                        }
+
+                        // Adiciona evento de clique na navbar
+                        document.querySelector('.navbar').addEventListener('click', function(event) {
+                            const target = event.target.closest('a'); // Verifica se o clique foi em um link
+                            if (target) {
+                                event.preventDefault(); // Impede o comportamento padrão do link
+                                const href = target.getAttribute('href'); // Pega o atributo href
+                                scrollToSection(href); // Chama a função scrollToSection com o ID correspondente
+                            }
+                        });
+
+                        // Evento para rolar até a seção 'home' se necessário
+                        scrollToSection('#home');
+                    });
+                </script>
 
                 <div class="navbar_res">
                     <button class="button_res">
@@ -51,11 +85,54 @@
                     <li class="nav-item">
                         <a href="#gallery">Galeria</a>
                     </li>
+                    <li class="nav-item">
+                        <a href="#footer">Footer</a>
+                    </li>
                     <!-- <li class="nav-item"> -->
                     <!-- <a href="#feedback">Feedbacks</a> -->
                     <!-- </li> -->
                 </ul>
             </nav>
+
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    const nav = document.querySelector('nav');
+
+                    // Função para rolar até a seção desejada
+                    function scrollToSection(selector) {
+                        const section = document.querySelector(selector);
+                        const navHeight = nav.offsetHeight;
+
+                        window.scrollTo({
+                            top: section.offsetTop - navHeight,
+                            behavior: 'smooth'
+                        });
+                    }
+
+                    // Adiciona evento de clique na navbar principal
+                    document.querySelector('.navbar').addEventListener('click', function(event) {
+                        const target = event.target.closest('a'); // Verifica se o clique foi em um link
+                        if (target) {
+                            event.preventDefault(); // Impede o comportamento padrão do link
+                            const href = target.getAttribute('href'); // Pega o atributo href
+                            scrollToSection(href); // Chama a função scrollToSection com o ID correspondente
+                        }
+                    });
+
+                    // Adiciona evento de clique na navbar responsiva
+                    document.querySelector('.nav_res').addEventListener('click', function(event) {
+                        const target = event.target.closest('a'); // Verifica se o clique foi em um link
+                        if (target) {
+                            event.preventDefault(); // Impede o comportamento padrão do link
+                            const href = target.getAttribute('href'); // Pega o atributo href
+                            scrollToSection(href); // Chama a função scrollToSection com o ID correspondente
+                        }
+                    });
+
+                    // Evento para rolar até a seção 'home' se necessário
+                    scrollToSection('#home');
+                });
+            </script>
         </div>
 
         <header class="header-content" id="home">
@@ -259,7 +336,7 @@
             </section>
         </main> -->
 
-            <footer class="footer-content">
+            <footer id="footer" class="footer-content">
                 <h1>EPA 2024</h1>
                 <h1>DSCOTECA - 2°DS-AMS</h1>
                 <a href="https://www.instagram.com/epa_2ds_ams/" class="instagram-button" target="_blank">
