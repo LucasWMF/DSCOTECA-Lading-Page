@@ -22,7 +22,7 @@
 }
 
 #projects-content {
-    width: 80vw;
+    width: 90vw;
 }
 
 .projects-item {
@@ -86,7 +86,7 @@
     background: rgba(255, 255, 255, 0.2);
     padding: 1em;
     font-family: var(--font-raleway);
-    font-size: 1.5em;
+    font-size: 1em;
     color: var(--color-white);
     text-align: justify;
     font-feature-settings: 'pnum' on, 'lnum' on;

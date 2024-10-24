@@ -149,16 +149,37 @@
             </section>
 
             <div class="gallery-content" id="gallery">
-                <section class="main-section gallery-content1">
+                <section class="main-section gallery-content">
+                <div class="gallery-content-text">
                     <h1>GALERIA DE FOTOS</h1>
+                    <div style="gap: 0;">
+                        <p>Quer adicionar sua foto nesse mural? Nos envie via <a href="https://www.instagram.com/epa_2ds_ams/" target="_blank">instagram</a> que iremos adicionar aqui.</p>
+                        <p>Ao enviar sua foto, você concorda em autorizar a publicação e o uso da imagem em nosso site, sem fins lucrativos. As imagens podem ser baixadas por qualquer visitante do site. Você pode solicitar a remoção da sua imagem a qualquer momento. Agradecemos pela sua colaboração!</p>
+                    </div>
+                </div>
 
                     <div class="gallery">
-                        <img src="/image/logo.png">
-                        <img src="/image/logo.png">
-                        <img src="/image/logo.png">
-                        <img src="/image/logo.png">
-                        <img src="/image/logo.png">
+                        <img src="/image/imagem2.jpeg" alt="Imagem 2" class="gallery-item largeX largeY">
+                        <img src="/image/imagem1.jpeg" alt="Imagem 1" class="gallery-item">
+                        <img src="/image/imagem3.jpeg" alt="Imagem 3" class="gallery-item">
+                        <img src="/image/imagem4.jpeg" alt="Imagem 4" class="gallery-item">
+                        <img src="/image/imagem5.jpeg" alt="Imagem 5" class="gallery-item">
+                        <img src="/image/imagem6.jpeg" alt="Imagem 6" class="gallery-item">
+                        <img src="/image/imagem7.jpeg" alt="Imagem 7" class="gallery-item largeY">
+                        <img src="/image/imagem5.jpeg" alt="Imagem 5" class="gallery-item">
+                        <img src="/image/imagem6.jpeg" alt="Imagem 6" class="gallery-item">
+                        <img src="/image/imagem5.jpeg" alt="Imagem 5" class="gallery-item">
+                        <img src="/image/imagem6.jpeg" alt="Imagem 6" class="gallery-item">
                     </div>
+
+                    <div id="modal" class="modal">
+                        <span class="close" id="close">&times;</span>
+                        <img class="modal-content" id="modalImage" alt="Imagem tela cheia">
+                        <div id="caption"></div>
+                        <a id="downloadLink" href="#" download class="download-button"><i class="fa-solid fa-download"></i></a>
+                    </div>
+
+                    <script src="/js/gallery.js"></script>
 
                 </section>
 

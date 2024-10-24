@@ -1,49 +1,37 @@
 {
-    "functions": {
-      "api/index.php": {
-        "runtime": "vercel-php@0.7.1"
-      }
+  "functions": {
+    "api/index.php": {
+      "runtime": "vercel-php@0.7.1"
+    }
+  },
+  "routes": [
+    {
+      "src": "/public/(.*)",
+      "dest": "public/$1"
     },
-    "routes": [
-      {
-        "src": "/public/(.*)",
-        "dest": "public/$1"
-      },
-      {
-        "src": "/api/index.php",
-        "dest": "api/index.php"
-      },
-      {
-        "src": "/api/(.*)",
-        "dest": "api/index.php"
-      },
-      {
-        "src": "/css/(.*)",
-        "dest": "public/css/$1"
-      },
-      {
-        "src": "/image/(.*)",
-        "dest": "public/image/$1"
-      },
-      {
-        "src": "/js/(.*)",
-        "dest": "public/js/$1"
-      },
-      {
-        "src": "/",
-        "dest": "api/index.php"
-      },
-      {
-        "src": "/gallery",
-        "dest": "api/gallery.php"
-      },
-      {
-        "src": "/neon",
-        "dest": "api/neon.js"
-      },
-      {
-        "src": "/conexao",
-        "dest": "api/conexao.php"
-      }
-    ]
-  }  
+    {
+      "src": "/api/index.php",
+      "dest": "api/index.php"
+    },
+    {
+      "src": "/api/(.*)",
+      "dest": "api/index.php"
+    },
+    {
+      "src": "/css/(.*)",
+      "dest": "public/css/$1"
+    },
+    {
+      "src": "/image/(.*)",
+      "dest": "public/image/$1"
+    },
+    {
+      "src": "/js/(.*)",
+      "dest": "public/js/$1"
+    },
+    {
+      "src": "/",
+      "dest": "api/index.php"
+    }
+  ]
+}

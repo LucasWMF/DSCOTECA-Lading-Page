@@ -35,7 +35,7 @@ app.get('/php-test', (req, res) => {
 
 // Rota para renderizar o arquivo PHP 'test.php'
 app.get('/neon', (req, res) => {
-    res.sendFile(__dirname + '/neon.js');
+    res.render('neon.php');
 });
 
 // Middleware para erros 404 (arquivo PHP não encontrado)
@@ -50,7 +50,7 @@ app.use((err, req, res, next) => {
 });
 
 // Inicializa o servidor
-const port = process.env.PORT || 3000;
+const port = process.env.PORT ||  3000;
 app.listen(port, () => {
     console.log(`Servidor rodando na porta ${port}`);
 });

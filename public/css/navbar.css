@@ -85,6 +85,7 @@
 
 .button_res{
     display: none;
+    cursor: pointer;
 }
 
 .nav_res {
