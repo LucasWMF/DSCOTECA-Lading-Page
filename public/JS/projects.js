@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (htmlContent) {
         projectsContainer.innerHTML = htmlContent;
-        console.log(htmlContent);
+        // console.log(htmlContent);
     } else {
         console.log('Deu Erro Ferrou');
     }

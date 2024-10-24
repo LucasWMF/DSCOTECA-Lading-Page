@@ -32,6 +32,9 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+console.log(`Desenvolvido por Lucas Wagner de Melo Fogaça`)
+console.log(`Finalizado: 24/10/2024`)
+console.log(`Finalidade: Projeto EPA (Etec de Portas Abertas) da escola Etec Sales Gomes`)
 
 //     function scrollToSection(selector) {
 //         const section = document.querySelector(selector);

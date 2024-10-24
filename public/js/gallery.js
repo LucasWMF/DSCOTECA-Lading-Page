@@ -47,17 +47,15 @@ const gallery = [
         instagramUser: "epa_2ds_ams",
         largeY: true,
         largeX: false
-    },
-    // Adicione mais imagens conforme necessário
+    }
 ];
 
 // Seleciona elementos do modal
 const modal = document.getElementById('modal');
 const modalImage = document.getElementById('modalImage');
 const caption = document.getElementById('caption');
-const instagramLink = document.getElementById('instagram');
+const instagram = document.getElementById('instagram');
 const downloadLink = document.getElementById('downloadLink');
-const instagramUserInput = document.getElementById('instagramUser');
 
 // Cria elementos de imagem dinamicamente e adiciona ao DOM
 gallery.forEach(item => {
@@ -80,14 +78,9 @@ gallery.forEach(item => {
         modalImage.src = img.src; // Define a imagem do modal
         caption.innerText = img.alt; // Define a legenda
 
-        // Obtém o nome de usuário do input e constrói o link do Instagram
-        const instagramUser = instagramUserInput.value.trim();
-        if (instagramUser) {
-            instagramLink.href = `https://www.instagram.com/${instagramUser}/`; // Define o link do Instagram
-        } else {
-            instagramLink.href = `https://www.instagram.com/${item.instagramUser}/`; // Define o link do Instagram padrão
-        }
-
+        let instagram = `https://www.instagram.com/${item.instagramUser}/`; // Define o link do Instagram
+        instagram.href = `https://www.instagram.com/${item.instagramUser}/`; // Define o link do Instagram
+        // console.log(item.instagramUser)
         downloadLink.href = img.src; // Define o link para download
     });
 
@@ -102,7 +95,32 @@ document.getElementById('close').addEventListener('click', () => {
 
 // Fecha o modal ao clicar fora da imagem
 modal.addEventListener('click', (event) => {
-    if (!modalImage.contains(event.target) && event.target !== downloadLink && event.target !== instagramLink) {
+    if (!modalImage.contains(event.target) && event.target !== downloadLink && event.target !== instagram) {
         modal.style.display = 'none'; // Fecha o modal
+    }
+});
+
+// Atalhos de teclado
+document.addEventListener('keydown', (event) => {
+    // Fechar modal com ESC
+    if (event.key === 'Escape') {
+        modal.style.display = 'none'; // Fecha o modal
+    }
+
+    // Download com Ctrl + D
+    if (event.ctrlKey && event.key.toLowerCase() === 'd') {
+        event.preventDefault(); // Impede a ação padrão do navegador (favoritar página)
+        downloadLink.click(); // Simula o clique no link de download
+    }
+
+    // Abrir Instagram com Ctrl + I
+    if (modal.style.display === 'flex' && event.ctrlKey && event.key.toLowerCase() === 'i') {
+        event.preventDefault(); // Impede a ação padrão do navegador
+        // console.log('AAAA')
+
+        // Pega o link do Instagram baseado na imagem atual do modal
+        if (instagram) {
+            window.open(`https://www.instagram.com/${instagram}/`, '_blank'); // Abre o link do Instagram em uma nova aba
+        }
     }
 });

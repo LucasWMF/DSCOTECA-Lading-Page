@@ -234,11 +234,11 @@
                             <p>Ao enviar sua foto, você concorda em autorizar a publicação e o uso da imagem em nosso site, sem fins lucrativos. As imagens podem ser baixadas por qualquer visitante do site. Você pode solicitar a remoção da sua imagem a qualquer momento. Agradecemos pela sua colaboração!</p>
                             <p>Basta clicar nas imagens para os botões aparecerem</p>
                             <div class="tutorial">
-                                <p><i class="fa-solid fa-xmark"></i> | Fechar Modal</p>
+                                <p><i class="fa-solid fa-xmark"></i> | Fechar Modal (ou aperte ESC)</p>
                                 <p>
-                                    <i class="fa-brands fa-instagram"></i> | Abrir instagram da pessoa que enviou a foto
+                                    <i class="fa-brands fa-instagram"></i> | Abrir instagram da pessoa que enviou a foto (ou aperte Ctrl + I)
                                 </p>
-                                <p> <i class="fa-solid fa-download"></i> | Fazer Dowload da Foto</p>
+                                <p> <i class="fa-solid fa-download"></i> | Fazer Dowload da Foto (ou aperte Ctrl + D)</p>
                             </div>
                         </div>
                     </div>
@@ -261,7 +261,7 @@
                         <span class="close" id="close"><i class="fa-solid fa-xmark"></i></span>
                         <img class="modal-content" id="modalImage" alt="Imagem tela cheia">
                         <div id="caption"></div>
-                        <a id="instagram" href="{data.instagram}" class="instagram-button-owner" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a id="instagram" href="" class="instagram-button-owner" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                         <a id="downloadLink" href="#" download class="download-button"><i class="fa-solid fa-download"></i></a>
                     </div>
 
