@@ -234,18 +234,18 @@
             </footer>
 
             <?php
-            $PGHOST = 'ep-royal-frost-a4kh0xfk-pooler.us-east-1.aws.neon.tech';
-            $PGUSER = 'DSCOTECA_owner';
-            $PGPASSWORD = 'VJqgRHc2udj5';
-            $PGDATABASE = 'DSCOTECA';
+            // $PGHOST = 'ep-royal-frost-a4kh0xfk-pooler.us-east-1.aws.neon.tech';
+            // $PGUSER = 'DSCOTECA_owner';
+            // $PGPASSWORD = 'VJqgRHc2udj5';
+            // $PGDATABASE = 'DSCOTECA';
             
-            $conn = new mysqli($PGHOST, $PGUSER, $PGPASSWORD, $PGDATABASE);
+            // $conn = new mysqli($PGHOST, $PGUSER, $PGPASSWORD, $PGDATABASE);
 
-            if ($conn->connect_error) {
-                die("Conexão falhou: " . $conn->connect_error);
-            }
+            // if ($conn->connect_error) {
+            //     die("Conexão falhou: " . $conn->connect_error);
+            // }
             
-            echo "Conexão bem-sucedida!";
+            // echo "Conexão bem-sucedida!";
 
             ?>
 
