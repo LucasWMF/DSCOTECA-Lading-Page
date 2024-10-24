@@ -8,16 +8,13 @@ const app = express();
 
 // Define o .php como mecanismo para arquivos PHP
 app.engine('php', phpExpress.engine);
-app.set('views', path.join(__dirname, 'api')); // Define a pasta 'api' como local para os arquivos PHP
+app.set('views', path.join(__dirname, 'api'));
 app.set('view engine', 'php');
 
-// Serve arquivos estáticos (CSS, JS, imagens) da pasta 'public'
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Rota de teste simples para verificar o Node.js
 app.get('/', (req, res) => {
-    console.log('Acessando a rota /');
-    res.render('index.php'); // Renderiza o arquivo index.php na pasta api
+    res.render('index.php'); 
 });
 
 // Outras rotas
@@ -34,6 +31,11 @@ app.get('/conexao', (req, res) => {
 // Rota para renderizar o arquivo PHP 'test.php'
 app.get('/php-test', (req, res) => {
     res.render('test.php');
+});
+
+// Rota para renderizar o arquivo PHP 'test.php'
+app.get('/neon', (req, res) => {
+    res.sendFile(__dirname + '/neon.js');
 });
 
 // Middleware para erros 404 (arquivo PHP não encontrado)

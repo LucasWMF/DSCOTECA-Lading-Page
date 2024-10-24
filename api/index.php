@@ -153,7 +153,11 @@
                     <h1>GALERIA DE FOTOS</h1>
 
                     <div class="gallery">
-                        <h1>EM BREVE!</h1>
+                        <img src="/image/logo.png">
+                        <img src="/image/logo.png">
+                        <img src="/image/logo.png">
+                        <img src="/image/logo.png">
+                        <img src="/image/logo.png">
                     </div>
 
                 </section>
@@ -238,13 +242,13 @@
             // $PGUSER = 'DSCOTECA_owner';
             // $PGPASSWORD = 'VJqgRHc2udj5';
             // $PGDATABASE = 'DSCOTECA';
-            
+
             // $conn = new mysqli($PGHOST, $PGUSER, $PGPASSWORD, $PGDATABASE);
 
             // if ($conn->connect_error) {
             //     die("Conexão falhou: " . $conn->connect_error);
             // }
-            
+
             // echo "Conexão bem-sucedida!";
 
             ?>

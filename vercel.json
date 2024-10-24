@@ -38,6 +38,10 @@
         "dest": "api/gallery.php"
       },
       {
+        "src": "/neon",
+        "dest": "api/neon.js"
+      },
+      {
         "src": "/conexao",
         "dest": "api/conexao.php"
       }

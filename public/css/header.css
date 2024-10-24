@@ -37,7 +37,7 @@
 }
 
 .letf-texts p {
-    font-size: max(1.25, 1em);
+    font-size: 1.2em;
     text-align: left;
     text-justify: inter-word;
     font-family: var(--font-roboto);
@@ -101,6 +101,10 @@
     .right img {
         aspect-ratio: 1/1;
     }
+
+    .letf-texts h1 {
+        font-size: 2.5em;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -112,7 +116,7 @@
         display: none;
     }
 
-    .left-texts h1 {
+    .letf-texts h1 {
         font-size: 2.5em;
     }
 }
